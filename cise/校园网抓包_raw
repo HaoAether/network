@@ -1,0 +1,2794 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2024.9.1" exportTime="Sun Mar 30 22:18:35 CST 2025">
+  <item>
+    <time>Sun Mar 30 22:14:14 CST 2025</time>
+    <url><![CDATA[http://172.16.1.32/]]></url>
+    <host ip="172.16.1.32">172.16.1.32</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET / HTTP/1.1
+Host: 172.16.1.32
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+]]></request>
+    <status>200</status>
+    <responselength>502</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Cache-control: no-cache
+Connection: close
+Content-Type: text/html
+Content-length: 393
+
+<html>
+<head>
+<script type="text/javascript">location.href="http://172.16.4.32/webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D"</script>
+</head>
+<body>
+Authentication is required. Click <a href="http://172.16.4.32/webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D">here</a> to open the authentication page.
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sun Mar 30 22:14:28 CST 2025</time>
+    <url><![CDATA[http://172.16.4.32/webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D]]></url>
+    <host ip="172.16.4.32">172.16.4.32</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D]]></path>
+    <extension>do</extension>
+    <request base64="false"><![CDATA[GET /webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D HTTP/1.1
+Host: 172.16.4.32
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: http://172.16.1.32/
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+]]></request>
+    <status>200</status>
+    <responselength>63817</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 
+Server: bossWebV1.0.1
+Date: Sun, 30 Mar 2025 14:14:31 GMT
+Content-Type: text/html;charset=utf-8
+Connection: keep-alive
+X-FRAME-OPTIONS: SAMEORIGIN
+REFERRER-POLICY: STRICT-ORIGIN-WHEN-CROSS-ORIGIN
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: master-only
+X-Download-Options: noopen
+X-XSS-Protection: 1
+Set-Cookie: null;SameSite=strict
+Cache-Control: no-store
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Set-Cookie: JSESSIONID-BOSS-1=44B0083446F56C4ED38F20DC09AA1EB9; Path=/; HttpOnly
+Content-Language: en-US
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src *;style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';img-src * data:;worker-src * blob:;font-src 'self' data:;
+X-XSS-Protection: 1
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+X-Permitted-Cross-Domain-Policies: master-only
+X-Download-Options: noopen
+Permissions-Policy: interest-cohort=()
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Length: 62656
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+	<title>............</title>
+	
+
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=7,IE=9,IE=EDGE">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="no-cache" />
+<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<meta HTTP-EQUIV="expires" CONTENT="0">
+
+
+
+<script type="text/javascript" src="/portal/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/portal/js/jquery.layerModel.js"></script>
+
+<!--[if lt IE 9]>
+    <script type="text/javascript"  src="/portal/js/ie/respond.js"></script>
+<![endif]-->
+
+
+	
+	
+
+
+<link href="/portal/css/portalPageBase.css" type="text/css" media="all" rel="stylesheet" />
+<link href="/portal/css/layerModel.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="/css/animate.min.css"/>
+
+	<link rel="stylesheet" href="/portal/uploads/pc/demo3/css/login.css?t=20210901">
+	<style>
+		.noticeInfo{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+<form id="goLoginForm" method="post">
+<input id="hostIp" name="hostIp" type="hidden" value="http://127.0.0.1:8081/" />
+<input id="loginType" name="loginType" type="hidden" value="" />
+<input id="auth_type" name="auth_type" type="hidden" value="0" /> 
+<input id="isBindMac1" name="isBindMac1" type="hidden" value="0" /> 
+<input id="pageid" type="hidden" name="pageid" value="1" /> 
+<input id="userid1" type="hidden" value="" disabled="disabled" /> 
+<input id="passwd1" type="hidden" value="" disabled="disabled" /> 
+<input id="listqqauth" type="hidden" name="listqqauth" value="" disabled="disabled"/>
+<input id="listwbauth" type="hidden" name="listwbauth" value="" disabled="disabled"/>
+<input id="listwxauth" type="hidden" name="listwxauth" value="0" disabled="disabled"/>
+<input id="listtwiceauth" type="hidden" name="listtwiceauth" value="0" disabled="disabled"/> <!-- ............ -->
+<input id="terminalType" type="hidden" name="templatetype" value="1"/>
+<input id="listbindmac" type="hidden" name="listbindmac" value="0"/>
+<input id="recordmac" type="hidden" name="recordmac" value="0"/>
+<input id="listgetpass" type="hidden" value="0"/>
+<input id="areaId" type="hidden" value="0"/>
+<input type="hidden" id="logoutflag" value="2" />
+<input type="hidden" id="logouturl" value="" />
+<input type="hidden" id="listwxsysauth" value="" />
+<input type="hidden" id="listwxwifiauth" value="" />
+<input type="hidden" id="logoutgourl" value="" />
+
+<!-- ............ -->
+<input type="hidden" id="isRemind" name="isRemind" value=""/>
+<input id="urlParameter" type="hidden" name="urlParameter" value="wlanuserip=172.18.2.60&amp;wlanacname=bras&amp;wlanusermac=F4-46-37-30-67-1D" disabled="disabled"/>
+<input id="act" type="hidden" value="" disabled="disabled"/> 
+
+<input id="loginTimes" type="hidden" name="loginTimes" value=""/>
+<input id="groupId" type="hidden" name="groupId" value=""/>
+<input id="userid2" type="hidden" value="" disabled="disabled" /> 
+<input id="passwd2" type="hidden" value="" disabled="disabled" /> 
+<input id="wbUrl" type="hidden" value="/wbDeal.do?wlanuserip=172.18.2.60&amp;wlanacname=bras&amp;wlanusermac=F4-46-37-30-67-1D&systemtype=1&pageid=1"/>
+<input id="qqUrl" type="hidden" value="/wbDeal.do?wlanuserip=172.18.2.60&amp;wlanacname=bras&amp;wlanusermac=F4-46-37-30-67-1D&systemtype=2&pageid=1"/>
+
+<input id="portalVer" type="hidden" value="0"/> <!-- ............ -->
+<input id="tservertypeid" type="hidden" value="h3c" />
+
+<input id="wlanuserip" name="wlanuserip" type="hidden" value="172.18.2.60" disabled="disabled"/>
+<input id="wlanacname" name="wlanacname" type="hidden" value="bras" disabled="disabled"/>
+<input id="distoken" name="distoken" type="hidden" value="" />
+
+<!-- .................. -->
+<input id="userIp" name="userIp" type="hidden" value="172.18.2.60" disabled="disabled"/>
+<input id="echostr" type="hidden" name="echostr" value=""/>
+
+<input id="wlanacip" name="wlanacip" type="hidden" value="172.16.4.254" disabled="disabled"/>
+<input id="ssid" type="hidden" value=""/>
+<input id="vlan" type="hidden" value=""/>
+<input id="mac" type="hidden" value="F4-46-37-30-67-1D"/>
+<input id="initUrl" type="hidden" value="" name="url"/> <!-- ...............URL -->
+<input id="errMessage" type="hidden" value=""/>
+<input id="wispr_userId" type="hidden" value="" disabled="disabled" /> <!-- wispr............... -->
+<input id="wispr_passwd" type="hidden" value="" disabled="disabled" /> <!-- wispr............... -->
+<input id="f_Qv" type="hidden" value="" name="f_Qv" disabled="disabled"/> <!-- moto ac/ap ...... -->
+<input id="hs_server" type="hidden" value="" name="f_hs_server"  disabled="disabled"/><!-- moto ac/ap ...... -->
+
+<input id="portalVer_bean" type="hidden" value="" disabled="disabled" /><!-- wispr........................ -->
+<input id="typeid_bean" type="hidden" value="" disabled="disabled" /><!-- wispr........................ -->
+<input id="realTerminalType" type="hidden" value="a" disabled="disabled" /><!-- .................. -->
+<input id="operatorastrict" type="hidden"  value="0,1,2,3" disabled="disabled" /><!-- ...............  ......-->
+
+
+<input id="serverAddress" type="hidden" value="" disabled="disabled" />
+
+
+
+<!-- .........wifi.........start -->
+<input id="wisprauth" type="hidden" value="" disabled="disabled" />
+<input id="autouserid" type="hidden" value="" disabled="disabled" />
+<input id="autopasswd" type="hidden" value="" disabled="disabled" />
+<input id="isautoauth" name="isautoauth" type="hidden" value="" />
+<input id="isopengzauth" type="hidden" value="" disabled="disabled" />
+<input id="ismustgz" type="hidden" value="" disabled="disabled" />
+<input id="timestamp" type="hidden" value="0" disabled="disabled"/>
+<input id="secretkey" type="hidden" value="" disabled="disabled" />
+<input id="shop_id" type="hidden" value="" disabled="disabled" />
+<input id="bssid" type="hidden" value="" disabled="disabled" />
+<input id="wxSSID" type="hidden" value="" disabled="disabled" />
+<input id="appid" type="hidden" value="" disabled="disabled" />
+<input id ="goPageName" type="hidden" value="" disabled="disabled"/>
+<input id="isIosAuthPop" type="hidden" value="" disabled="disabled"/>
+
+<!-- .........wifi.........end -->
+
+<input id="onlinepayvalue" type="hidden" value=" " disabled="disabled"/>
+
+<!---..................--->
+<input type="hidden" id="openId" value=""/>
+<input type="hidden" id="wxcheckmobile" value=""/><!-- .................. -->
+<input type="hidden" id="selfLoginUrl" value="" />
+<input type="hidden" id="modifyPwdFlag" value="0" />
+
+<!--............-->
+<input type="hidden" value="/portal/uploads/pc/demo3/images/logo.jpg" name="notice_pic_loop1" />
+<input type="hidden" value="/portal/uploads/pc/demo3/images/rrs_bg.jpg" name="notice_pic_loop2" />
+<div class="content_warp">
+	<div class="top">
+		<div class="content">
+			<div class="logo" >
+				<img id="notice_logo"> <span
+					class="line">|</span> <span class="sname">...........................</span>
+			</div>
+		</div>
+	</div>
+	<div class="main_warp">
+		<div class="main_form">
+			<!-- style="background-image: url(/portal/uploads/pc/demo3/images/rrs_bg.jpg); background-size: 100% 100%;" -->
+			<div class="show_pic" >
+				<div id="notice_pic2_box" class="slideBox">
+					<ul id="notice_pic2" class="items"></ul>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="login_form">
+					<div class="layui-form-item">
+						<div class="form-title" id="dateMessage"></div>
+					</div>
+
+					<!--.........-->
+					
+						
+							<div class="layui-form-item active">
+								<div class="layui-input-block">
+									<i class="layui-icon">&#xe612;</i>
+									
+										<input type="text"
+											   id="userId" name="userId" value=""
+											   autocomplete="off" placeholder="..............." class="layui-input"
+											   tabindex=1 onkeyup="if(event.keyCode!=37 && event.keyCode!=39){ value=value.replace(/[^0-9a-zA-Z@_:.,-]/g,'');}"  onblur="if(event.keyCode!=37 && event.keyCode!=39){ value=value.replace(/[^0-9a-zA-Z@_:.,-]/g,'');}">
+									
+									
+								</div>
+								<!--  <span class="account toggle_account_message"><i
+                                    class="layui-icon">&#xe688;</i>..................</span>-->
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-input-block">
+										<i class="layui-icon">&#xe673;</i><input type="password"
+											id="passwd" name="passwd" value=""
+											autocomplete="off" placeholder="..............." class="layui-input"
+											tabindex=2>
+										<div class="code" id="getpasswd">............</div>
+								</div>
+							</div>
+							
+							
+						
+
+						<div class="form-check">
+							
+								<div>
+									<input type="checkbox" name="remInfo" id="remInfo"  class="divCheckBoxNoSel">
+									<label for="remInfo">............</label>
+								</div>
+							
+							
+							
+						</div>
+						
+							<div class="layui-form-item">
+								<button id="submitForm" type="button"
+										class="layui-btn layui-btn-normal layui-btn-big" >......</button>
+							</div>
+						
+						
+
+						
+						
+						
+						
+						
+
+						<div class="layui-form-item contentflex">
+							
+							
+							
+							
+						</div>
+						<div
+								class="account_message layui-anim layui-anim-fadeout layui-hide">
+							<div>
+								<i class="layui-icon triangle">&#xe623;</i>
+								<p class="title">...............</p>
+								<span class="close toggle_account_message"><i
+										class="layui-icon">&#x1007;</i>......</span>
+								<p>
+									<span>..................</span> ............
+								</p>
+							</div>
+						</div>
+					
+					<!--.........-->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="foot">
+        <div class="content">
+            <div class="title">
+                <ul>
+                    <li class="active" onclick="change_message(this,'system_message')"><i class="layui-icon">&#xe645;</i>............<i class="layui-icon triangle">&#xe623;</i></li>
+                </ul>
+            </div>
+            <!--............-->
+            <div class="list">
+                <ul class="system_message">
+                    <li><div id="notice_message1" class="messageStyle"></div></li>
+                    <li><div id="notice_message2" class="messageStyle"></div></li>
+                    <li><div id="notice_message3" class="messageStyle"></div></li>
+                    <li><div id="notice_message4" class="messageStyle"></div></li>
+                    <li><div id="notice_message5" class="messageStyle"></div></li>
+                    <li><div id="notice_message6" class="messageStyle"></div></li>
+                </ul>
+            </div>
+            <div class="layui-clear"></div>
+
+			
+				<div class="list">
+						<br />
+				</div>
+			
+        </div>
+    </div>
+	<div class="copyright">
+		<span></span>
+	</div>
+</div>
+<script>
+    $(function() {
+        $(".toggle_account_message").on("click",function(){
+            var _account_message = $(".account_message");
+            var _toggle_account_message = $(".account.toggle_account_message");
+            _toggle_account_message.toggleClass("layui-hide");
+            _account_message.removeClass("layui-hide");
+            _account_message.toggleClass("layui-anim-fadeout").toggleClass("layui-anim-fadein");
+            _account_message.hasClass("layui-anim-fadeout")? _account_message.addClass("layui-hide"):"";
+        });
+
+        var number = $('.login_form').find(".layui-form-item").length;
+        console.log("number"+number);
+        if(number>5){
+            $(".login_form").attr("style","top:15%;");
+        }
+        if(number>6){
+            $(".login_form").attr("style","top:10%;");
+        }
+        if(number>7){
+            $(".login_form").attr("style","top:8%;");
+        }
+
+    });
+
+
+    $(function(){
+        var  termsDesc = $("#termsDesc");
+        $("#desc_lb").on("click",function(){
+            termsDesc.toggleClass("divCheckBoxSel");
+            termsDesc.toggleClass("divCheckBoxNoSel");
+        });
+        var remInfo = $("#remInfo");
+        $("#remInfo").on("click",function(){
+            remInfo.toggleClass("divCheckBoxSel");
+            remInfo.toggleClass("divCheckBoxNoSel");
+        });
+    });
+    window.onload = function() {
+        (function pwdChecked() {
+            if(document.getElementById('remInfo')) {
+                var pwd = document.getElementById('remInfo');
+                if(pwd.className == 'divCheckBoxNoSel') {
+                    pwd.checked = false
+                } else if (pwd.className == 'divCheckBoxSel') {
+                    pwd.checked = true
+                }
+            } else {
+
+            }
+        })();//........................
+    }
+
+</script>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/xadmin/lib/layui/css/layui.css">
+
+<!-- ................................. -->
+<div id="first_allscreen" class="slideBox" style="display: none;">
+	<ul id="first_allscreen_desc" class="items"></ul>
+</div>
+
+<!-- ................................. -->
+<div id="notice_pic_first" class="slideBox" style="display: none;">
+	<ul id="notice_first" class="items"></ul>
+</div>
+
+<!-- ..................... -->
+<div id="openWxFixed"
+	style="z-index: 999999;position: fixed; bottom: 0px; left: 0px; width: 100%; height: 4.5%; text-align: center; display: none; background:rgba(0, 0, 0, 0.92); opacity: 0.75; font-size: 1.2em;color:#62FF00;"></div>
+
+<!-- ................................. -->
+<div id="center_allscreen" class="slideBox" style="display: none;">
+	<ul id="center_allscreen_desc" class="items"></ul>
+</div>
+
+<!-- ................................. -->
+<div id="notice_pic_center" class="slideBox" style="display: none;z-index: 10000;width:100%;height:100%;">
+	<ul id="notice_center" class="items" style="height:100%;"></ul>
+</div>
+
+<!-- ............ -->
+<div id="floatNotice" style="position: fixed; display: none;"></div>
+<script src="/js/jquery.hDialog.js"></script>
+
+
+
+  
+		<script>window.questJSON = [];</script>
+  
+  
+
+<script type="text/javascript">
+	window.noticeJSON = []; //........................
+	window.clientWidth = $(window).width(); //.......................................
+	window.clientHeight = $(window).height(); //.......................................
+	window.httpUrl = "http://" + window.location.host;
+	var tmpTag = "https:" == document.location.protocol ? false : true;
+	if (tmpTag) {
+		window.httpUrl = "http://" + window.location.host;
+	} else {
+		window.httpUrl = "https://" + window.location.host;
+	}
+	window.tripFailTime = 5 * 1000; //.................................5S...
+	if(window.console){
+		console.log("......URL..." + httpUrl);
+	}
+	//.........
+	var now = new Date(),hour = now.getHours()
+	var act=$("#act").val();
+	console.log("..............."+hour+",act:"+act);
+	var val502 = "............"; // ...........................
+	if(hour < 6){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 9){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 12){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 14){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 17){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 19){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 23){
+		$("#dateMessage").html("........................"+val502);
+	}else{
+		$("#dateMessage").html(".........................................."+val502);
+	}
+
+	if(act=='LOGINSUCC'){
+		$("#dateMessage").hide();
+		var accountId=$("#connUserId").val();
+		var message="";
+		if(hour < 6){
+			message='............';
+		}else if (hour < 9){
+			message='............';
+			//$("#successTitle").html("............");
+		}else if (hour < 12){
+			message='............';
+			//$("#successTitle").html("............");
+		}else if (hour < 14){
+			message='............';
+			//$("#successTitle").html("............");
+		}else if (hour < 17){
+			message='............';
+			//$("#successTitle").html("............");
+		}else if (hour < 19){
+			message='............';
+			//$("#successTitle").html("............");
+		}else if (hour < 23){
+			message='............';
+			//$("#successTitle").html("............");
+		}else{
+			message='..............................';
+			//$("#successTitle").html("..............................");
+		}
+		console.log(accountId)
+		if(accountId!=""){
+			message=accountId+"..."+message;
+			$("#successTitle").html(message);
+		}else{
+			$("#successTitle").html(message);
+
+		}
+
+	}
+</script>
+
+<!-- wispr..................... -->
+<iframe id="logoutFrame" style="display: none;" src=""></iframe>
+<iframe id="loginFrame" style="display: none;" src=""></iframe>
+
+<script type="text/javascript">
+			var motoCount = 1;
+			var interval;
+			var  tip = $("#openWxFixed");
+			//........................
+			function JsRedirect() {
+				if (motoCount >= 0) {
+					$("body").append('<iframe src="/portal/moto_wispr.html" style="display:none;"></iframe>');
+				} else {
+					clearTimeout(interval);
+				}
+				--motoCount;
+			}
+
+			// wispr...............
+			function wisprLogoutDo(){
+				var portalVer = $("#portalVer").val();
+				if(portalVer == '3') {//wispr.........
+					$.tooltip('..................!', tripFailTime, false);
+					autoClose();
+				}
+			}
+
+			function autoClose(){
+				var numTime = 6;
+				tip.show();
+				var interval = setInterval(function() {
+					--numTime;
+					showTip(numTime, tip); // ...............
+					if (numTime == 0) {
+						showTip(numTime, tip); // ............
+						clearTimeout(interval);
+						closeW();
+					}
+				}, 1000);
+			}
+
+			function  showTip(num, tip_obj){
+				if(num>0){
+					$(tip_obj).html(num+'...........................!');
+				}else{
+					$(tip_obj).html('...............!...........................!');
+				}
+
+			}
+			function closeW(){
+				// var userAgent = navigator.userAgent;
+				// if (userAgent.indexOf("Firefox") != -1 || userAgent.indexOf("Presto") != -1) {
+				// 	window.location.replace("about:blank");
+				// } else {
+				// 	window.opener = null;
+				// 	window.open("", "_self");
+				// 	window.close();
+				// }
+				location.href = 'http://1.1.1.1'
+			}
+		//.........
+		function autoSetTimeOut() {
+			motoCount = 1;
+			interval = setInterval(JsRedirect, 1000);
+		}
+		// wispr..................
+		function wispr_logout_deal(closeFlag) {
+			var tservertypeid = $("#tservertypeid").val();
+			var tserverip = $("#tserverip").val();
+			var src ="";
+			if (tservertypeid == 'aruba') {
+				src = "http://" + tserverip + "/auth/logout.html";
+			}else 	if (tservertypeid == 'ruckus') {
+				src = "http://" + tserverip + ":9997/logout";
+			}else if (tservertypeid == 'motorola') { //MOTO
+				src = "/portal/moto_discon.html";
+				autoSetTimeOut();
+			}else 	if (tservertypeid == 'axe') {
+				src = "http://1.1.1.1/userlogout.massrv?pap=0";
+			}else if(tservertypeid == 'mikrotik') {//RouterOS
+				//var splitUrl = $("#initUrl").val();
+				//http://172.31.0.1/logout ...............
+
+				//if(typeof(splitUrl) == 'undefined' || splitUrl==null || splitUrl ==''){
+				//	splitUrl = $("#f_Qv").val();
+				//}
+
+				var splitUrl = $("#f_Qv").val();
+				//alert("f_Qv:"+splitUrl);
+
+				if(splitUrl.split(",").length > 1){
+					splitUrl = splitUrl.split(",")[0];
+				}
+				var  k = splitUrl.indexOf("login");
+				var	iInitHead =  splitUrl.indexOf("https");
+				if(window.console){	console.log(splitUrl.substring(0,k));		}
+				splitUrl = splitUrl.substring(0,k);
+				if(iInitHead != -1){ //......https replace..................
+						splitUrl = "http"+splitUrl.substring(5,splitUrl.length);
+				}
+				src = splitUrl+"logout";
+				//alert("src:"+src);
+
+			}else 	if (tservertypeid == 'fc') {
+				src = "http://1.1.1.1/cgi-bin/ace_web_auth.cgi?logout=1&login_page=http://163.com";
+			}
+			if(window.console){	console.log("..............."+tservertypeid+",url:"+src );	}
+
+			$("#logoutFrame").attr("src", src);
+
+			if(closeFlag=='1'){
+				//alert(closeFlag);
+				wisprLogoutDo();
+			}
+
+			//	alert("...............");
+			//var urlPam = $("#urlParameter").val();
+			//$("#goLoginForm").attr("action", "/webdisconn.do?" + urlPam).submit();
+		}
+
+
+		// wispr..................
+		function wispr_login_deal(autouserid,autopasswd) {
+			var tservertypeid = $("#tservertypeid").val();
+			var portalAuthUrl="";
+			if (tservertypeid == 'aruba') {//ARUBA
+				portalAuthUrl = "http://securelogin.arubanetworks.com/auth/index.html/u?username=" + autouserid + "&password=" + autopasswd;
+			} else if (tservertypeid == 'arubaap') {// ARUBAAP
+				portalAuthUrl = "http://securelogin.arubanetworks.com/cgi-bin/login?user=" + autouserid + "&password=" + autopasswd + "&cmd=authenticate";
+			} else if (tservertypeid == 'motorola') { //MOTO
+				portalAuthUrl = "/portal/moto_wispr.html";
+				autoSetTimeOut();
+			}else if (tservertypeid == 'ruckus') {//......
+				portalAuthUrl = "http://" + $("#wlanacip").val() + ":9997/login?username=" + autouserid + "&password=" + autopasswd + "&cmd=authenticate";
+			}else if(tservertypeid == 'axe'){// ......
+				portalAuthUrl =  "http://1.1.1.1/userlogin.massrv?pap=0&userid="+ autouserid + "&passwd="+autopasswd;
+			}else if(tservertypeid == 'mikrotik') {//RouterOS
+					var splitUrl = $("#initUrl").val();
+					if(typeof(splitUrl) == 'undefined' || splitUrl==null || splitUrl ==''){
+						splitUrl = $("#f_Qv").val();
+					}
+					if(splitUrl.split(",").length > 1){
+						splitUrl = splitUrl.split(",")[0];
+					}
+					var	iInitHead =  splitUrl.indexOf("https");
+					if(iInitHead != -1){ //......https replace..................
+						splitUrl = "http"+splitUrl.substring(5,splitUrl.length);
+					}
+					//http://172.31.0.1/login?username=1&password=1
+					portalAuthUrl = splitUrl+"?username="+autouserid+"&password="+autopasswd;
+			}else if(tservertypeid == 'fc'){// fc
+				portalAuthUrl =  "http://1.1.1.1/cgi-bin/ace_web_auth.cgi?btlogin=Login&username="+ autouserid + "&userpwd="+autopasswd;
+			}else if(tservertypeid == 'extreme'){// ............
+				portalAuthUrl =  "http://"+ $("#wlanacip").val() + "/req.php?url=any-value-here&username="+ autouserid + "&password="+autopasswd;
+ 				console.log("..............."+portalAuthUrl);
+ 				location.href = (portalAuthUrl);
+ 				return;
+			}
+			$("#loginFrame").attr("src", portalAuthUrl);
+			//	tip.html(portalAuthUrl).show();
+			if(window.console){console.log(".................."+tservertypeid+",url:"+portalAuthUrl );}
+
+		}
+
+
+</script>
+
+<!-- .............................. -->
+
+</form>
+
+
+<!-- ..................... -->
+
+
+<!-- .................. -->
+<form id="command" action="/webauth.do;JSESSIONID-BOSS-1=44B0083446F56C4ED38F20DC09AA1EB9?wlanuserip=172.18.2.60&amp;amp;wlanacname=bras&amp;amp;wlanusermac=F4-46-37-30-67-1D" method="post">
+	<script type="text/javascript">
+		var s = '';
+		console.log(s);
+		if (s != '') {
+			var g = "<span.*?>(.*?)</span>";
+			var tem = s.match(g)[1];
+			$.tooltip(tem, tripFailTime, false);
+		}
+
+		var wxcode = '';
+		var contenErr = '';
+		if (wxcode == '1') {
+			contenErr = ".......................................openId";
+		} else if (wxcode == '2') {
+			contenErr = "..............................openId";
+		} else if (wxcode == '5') {
+			contenErr = ".....................Portal......";
+		} else if (wxcode == '6') {
+			contenErr = ".................................";
+		} else if (wxcode == '3') {
+			contenErr = ".......................................";
+		} else if (wxcode == '4') {
+			contenErr = "..................,.......................................";
+		}else if (wxcode == '7') {
+			contenErr = ".................................";
+		}
+
+
+		if (contenErr != '') {
+			$.tooltip(contenErr, tripFailTime, false);
+		}
+	</script>
+</form>
+
+<!-- ..................WIFI -->
+<!--c:if test="false"-->
+	
+		<script type="text/javascript" src="/portal/js/pcauth.js"></script>
+	
+	<script type="text/javascript">
+		$(function() {
+			$(window).bind('load', function() {
+				var height = $(window).height()
+				$(".main").css('height', height);
+			});
+		});
+	</script>
+	<div class="main"
+		style="position: fixed; bottom: 0px; left: 0px; width: 100%; text-align: center; display: none; background: rgb(255, 255, 255); opacity: 0.5; color: rgb(0, 0, 0); font-size: 1.2em;">
+		<!--..................... 1920x1200 ... 1920x1080-->
+		<div class="main__content-qrcode" id='qrcode_zone' style="text-align: center; margin: 20px auto; width: 250px;"></div>
+	</div>
+	<!-- apple........................ -->
+	<iframe id="autoAuthPost" src="" style="display: none;"></iframe>
+
+	<!-- .................................... -->
+	<iframe id="openWxAuth" src="" style="display: none;"></iframe>
+
+	<script type="text/javascript" src="/portal/js/jquery.md5.js"></script>
+   <script type="text/javascript" src="/xadmin/lib/layui/layui.js" charset="utf-8"></script>
+
+	<script type="text/javascript">
+		/* ...............pc... */
+		function IsPC() {
+			var userAgentInfo = navigator.userAgent;
+			var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+			var flag = true;
+			for (var v = 0; v < Agents.length; v++) {
+				if (userAgentInfo.indexOf(Agents[v]) > 0) {
+					flag = false;
+					break;
+				}
+			}
+			return flag;
+		}
+		function isMobile() {
+			var userAgentInfo = navigator.userAgent;
+			var mobileAgents = [ "Android", "iPhone", "SymbianOS", "Windows Phone", "iPad","iPod"];
+			var mobile_flag = false;
+			//......userAgent.....................
+			for (var v = 0; v < mobileAgents.length; v++) {
+				if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
+					mobile_flag = true;
+					break;
+				}
+			}
+			var screen_width = window.screen.width;
+			var screen_height = window.screen.height;
+
+			//..........................................
+			if(screen_width < 500 && screen_height < 800){
+				mobile_flag = true;
+			}
+			return mobile_flag;
+		}
+	</script>
+	<script type="text/javascript">
+	var mobile_flag = isMobile();
+	var width="90%",height="90%";
+	if(mobile_flag){
+		width='100%';
+		height='100%';
+	}
+	layui.use(['layer','upload','jquery' ], function() {
+			var layer = layui.layer;
+			var upload = layui.upload;
+			var $ = layui.jquery;
+			$("#recognize").change(function(){
+				   	var formData = new FormData();
+				    var file = document.getElementById('recognize').files[0];
+				    formData.append("file", file);
+	               	console.log(formData);
+	                $.ajax({
+	                   url: "/recognizeUpload.do",
+	                   data: formData,
+	                   type: "post",
+	                   dataType: "json",
+	                   cache: false,//........................
+	                   processData: false,//.........data........................... ............false
+	                   contentType: false, //......
+	                   success: function (res) {
+	                	   	if(res!=null&&res.errcode=="0"){
+	                	   		 var photo=res.errmsg;
+	                	   		 console.log("photo:"+photo);
+									 $.ajax({
+										    type : "POST",
+											url: "/recognize.do",
+											data:{
+												photo:photo
+											},
+											dataType:"json",
+										    success: function (json) {
+					                	   				if(json!=null&&json.errcode=="0"){
+										   				 	layer.msg(json.errmsg+",....................................", {offset: 't',anim: 6,time:2000},function(){
+															$("#userId").val(json.data.accountId);
+															$("#passwd").val(json.data.accountPwd);
+															$('#submitForm').trigger("click");
+										    	});
+											}else{
+												layer.msg("", {offset : 't',anim : 6});
+											}
+
+										    },
+											error: function(json){
+												layer.msg("........................", {offset : 't',anim : 6});
+											}
+									});
+	                	   	}else{
+								layer.msg("....................................", {offset : 't',anim : 6});
+                	   		}
+	                   },
+	               });
+			});
+			//PC..................
+			$("#modify").click(function(){
+				 layer.open({
+						type:2,
+						title: 'PORTAL............',
+						maxmin: true,//...............
+						btn:[],
+						closeBtn: 1,
+						shade: 0.6,
+						shadeClose: false, //chick shadeClose.....................
+						area: [width,height],
+					 	content: '/self/toResetPassword.do'
+					});
+			});
+			//........................
+			$("#mbModify").click(function(){
+				 layer.open({
+						type:2,
+						title: 'PORTAL............',
+						maxmin: true,//...............
+						btn:[],
+						closeBtn: 1,
+						shade: 0.6,
+						shadeClose: false, //chick shadeClose.....................
+						area: [width,height],
+						content: '/self/toResetPassword.do'
+					});
+			});
+			//portal............
+			$("#modifyPortal").click(function(){
+				var accountId=$("#connUserId").val();
+				if(!accountId){
+					layer.msg(".............................................", {
+						offset : 't',
+						anim : 6
+					});
+					return ;
+				}
+				 layer.open({
+						type:2,
+						title: '...............PORTAL............',
+						maxmin: true,//...............
+						btn:[],
+						closeBtn: 1,
+						shade: 0.6,
+						shadeClose: false, //chick shadeClose.....................
+						area: [width,height],
+						content: '/self/toChangePassword.do?accountId='+accountId
+					});
+			});
+
+			$("#gotoMessage").click(function(){
+				 layer.open({
+						type:2,
+						title: '...............Portal..................',
+						btn:['.......................................'],
+						closeBtn: 0,
+						shade: 0.6,
+						shadeClose: false, //chick shadeClose.....................
+						area: [width,height],
+						content: '/gotoBmessage.do?portalId=1'
+						,yes: function(index, layero){
+							layer.closeAll();
+					     }
+					});
+			});
+			$("#gotoMessage").click(function(){
+				 layer.open({
+						type:2,
+						title: '...............PORTAL..................',
+						btn:['.......................................'],
+						closeBtn: 0,
+						shade: 0.6,
+						shadeClose: false, //chick shadeClose.....................
+						area: [width,height],
+						content: '/gotoBmessage.do?portalId=1'
+						,yes: function(index, layero){
+							layer.closeAll();
+					     }
+					});
+			});
+			$("#slefRegister").click(function(){
+				var portalId=$("#pageid").val();
+				var wlanacip=$("#wlanacip").val();
+				var wlanuserip=$("#wlanuserip").val();
+				var wlanacname=$("#wlanacname").val();
+
+				/*
+				 * .............................................
+				 * ....................................................................................(..............................)
+				 * .........................................................H5.....................
+				 */
+				// ...........................
+				if(isIntranetIp()){
+					authPortalWx(); // ............
+				}
+	        	var bankReturHostIp='http://'; // ............
+				var toRegister="/self/toRegister.do?portalId="+portalId+"&wlanuserip="+wlanuserip+"&wlanacname="+wlanacname+"&distoken="+distoken+"&operatorPage=1";
+				if(mobile_flag){
+					// ..................
+					if(bankReturHostIp!="http://") {
+						toRegister=bankReturHostIp+toRegister; // ............+............
+					}
+					console.log("........................URL:"+toRegister);
+					window.location.href = toRegister;
+				} else {
+					// ............+............
+					console.log("...............URL..."+toRegister);
+					layer.open({
+						type:2,
+						title: 'PORTAL............',
+						maxmin: false,//...............
+						btn:[],
+						closeBtn: 1,
+						shade: 0.6,
+						shadeClose: false, //chick shadeClose.....................
+						area: [width,height],
+						content: toRegister
+					});
+				}
+
+
+			});
+
+		$("#visitorRegister").click(function(){
+			var toVisitorRegister="/api/visitor-input/-1.do"
+			console.log("..................URL..."+toVisitorRegister);
+			layer.open({
+				type:2,
+				title: 'PORTAL............',
+				maxmin: false,//...............
+				btn:[],
+				closeBtn: 1,
+				shade: 0.6,
+				shadeClose: false, //chick shadeClose.....................
+				area: [width,height],
+				content: toVisitorRegister
+			});
+		});
+
+			$("#slefLogin").click(function(){
+				var selfLoginUrl=$("#selfLoginUrl").val();
+				if(!selfLoginUrl){
+					layer.msg("PORTAL....................................", {
+						offset : 't',
+						anim : 6
+					});
+					return;
+				}
+				layer.open({
+					type:2,
+					title: 'PORTAL............',
+					maxmin: true,//...............
+					btn:[],
+					closeBtn: 1,
+					shade: 0.6,
+					shadeClose: false, //chick shadeClose.....................
+					area: [width,height],
+					content: selfLoginUrl
+				});
+			});
+
+
+			$("#broadspeed").click(function(){
+				var accountId=$("#connUserId").val();
+				if(!accountId){
+					layer.msg(".............................................", {
+						offset : 't',
+						anim : 6
+					});
+					return;
+				}
+				var speedUrl="/self/broadSpeedPay.do?accountId="+accountId;
+				layer.open({
+					type:2,
+					title: '...............PORTAL..............................',
+					maxmin: true,//...............
+					btn:[],
+					closeBtn: 1,
+					shade: 0.6,
+					shadeClose: false, //chick shadeClose.....................
+					area: [width,height],
+					content: speedUrl
+				});
+			});
+
+			$("#slefChangeGroup").click(function(){
+				
+				//........................................................................
+				if ($("#userId").val() == "") {
+					$.tooltip('.....................', tripFailTime, false);
+					$("#userId").focus();
+					return false;
+				}
+
+				if ($("#passwd").val() == "") {
+					$.tooltip('...............', tripFailTime, false);
+					$("#passwd").focus();
+					return false;
+				}
+
+				var userId = $("#userId").val();
+				var passwd = $("#passwd").val();
+				var pageid = $("#pageid").val();
+				$.ajax({
+					url : "/httpservice/checkUserPwdGeneral.do",
+					type : "POST",
+					data : {
+						userId : userId,
+						passwd : passwd,
+						pageid : pageid
+					},
+					dataType : "json",
+					success : function(json) {
+						switch (json.check) {
+							case '0':
+								$.tooltip('............,.................................', tripFailTime, false);
+								setTimeout(toChangeGroup, 2000);
+								break;
+							case '1':
+								$.tooltip('............', tripFailTime, false);
+								break;
+							case '2':
+								$.tooltip('...............', tripFailTime, false);
+								break;
+							case '3':
+								$.tooltip('............', tripFailTime, false);
+								break;
+						}
+					},
+					error : function(json) {
+						$.tooltip('..............................!', tripFailTime, false);
+					}
+				});
+				
+			});
+
+
+			$("#slefChangeOperator").click(function(){
+				
+				//........................................................................
+				if ($("#userId").val() == "") {
+					$.tooltip('.....................', tripFailTime, false);
+					$("#userId").focus();
+					return false;
+				}
+
+				if ($("#passwd").val() == "") {
+					$.tooltip('...............', tripFailTime, false);
+					$("#passwd").focus();
+					return false;
+				}
+
+				var userId = $("#userId").val();
+				var passwd = $("#passwd").val();
+				var pageid = $("#pageid").val();
+
+				$.ajax({
+					url : "/httpservice/checkUserPwdGeneral.do",
+					type : "POST",
+					data : {
+						userId : userId,
+						passwd : passwd,
+						pageid : pageid
+					},
+					dataType : "json",
+					success : function(json) {
+						switch (json.check) {
+							case '0':
+								$.tooltip('............,....................................', tripFailTime, false);
+								setTimeout(toChangeOperator, 2000);
+								break;
+							case '1':
+								$.tooltip('............', tripFailTime, false);
+								break;
+							case '2':
+								$.tooltip('...............', tripFailTime, false);
+								break;
+							case '3':
+								$.tooltip('............', tripFailTime, false);
+								break;
+						}
+					},
+					error : function(json) {
+						$.tooltip('.......................................!', tripFailTime, false);
+					}
+				});
+				
+			});
+
+
+			$("#slefRemoveMac").click(function(){
+				
+				//........................................................................
+				if ($("#userId").val() == "") {
+					$.tooltip('.....................', tripFailTime, false);
+					$("#userId").focus();
+					return false;
+				}
+
+				if ($("#passwd").val() == "") {
+					$.tooltip('...............', tripFailTime, false);
+					$("#passwd").focus();
+					return false;
+				}
+
+				var userId = $("#userId").val();
+				var passwd = $("#passwd").val();
+				var pageid = $("#pageid").val();
+
+				$.ajax({
+					url : "/httpservice/checkUserPwdGeneral.do",
+					type : "POST",
+					data : {
+						userId : userId,
+						passwd : passwd,
+						pageid : pageid
+					},
+					dataType : "json",
+					success : function(json) {
+						switch (json.check) {
+							case '0':
+								$.tooltip('............,..................MAC.........', tripFailTime, false);
+								setTimeout(toRemoveMac, 2000);
+								break;
+							case '1':
+								$.tooltip('............', tripFailTime, false);
+								break;
+							case '2':
+								$.tooltip('...............', tripFailTime, false);
+								break;
+							case '3':
+								$.tooltip('............', tripFailTime, false);
+								break;
+						}
+					},
+					error : function(json) {
+						$.tooltip('......MAC..................!', tripFailTime, false);
+					}
+				});
+				
+			});
+
+			$("#wechatLogin").click(function(){
+                var speedUrl='/wechatAuth.do?portalId=1'
+                layer.open({
+                    type:2,
+                    title: '.................................',
+                    maxmin: true,//...............
+                    btn:[],
+                    closeBtn: 1,
+                    shade: 0.6,
+                    shadeClose: false, //chick shadeClose.....................
+                    area: ['500px','500px'],
+                    content: speedUrl
+                });
+			});
+
+
+			var browser = {
+					versions : function() {
+						var u = navigator.userAgent, app = navigator.appVersion;
+						return { //.................................
+							trident : u.indexOf('Trident') > -1, //IE......
+							presto : u.indexOf('Presto') > -1, //opera......
+							webKit : u.indexOf('AppleWebKit') > -1, //.....................
+							gecko : u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //............
+							mobile : !!u.match(/AppleWebKit.*Mobile.*/), //.....................
+							ios : !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios......
+							android : u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android.........uc.........
+							iPhone : u.indexOf('iPhone') > -1, //.........iPhone......QQHD.........
+							iPad : u.indexOf('iPad') > -1, //......iPad
+							webApp : u.indexOf('Safari') == -1
+						//......web....................................
+						};
+					}(),
+					language : (navigator.browserLanguage || navigator.language).toLowerCase()
+				}
+				if (browser.versions.mobile) {//....................................browser...............
+			        var ua = navigator.userAgent.toLowerCase();//........................
+			        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+						//..................
+						$("body").html('<img alt="" src="/portal/images/portal_guide.jpg" style="left:0px;top: 0px;position: absolute;">')
+			        }
+			        if (ua.match(/WeiBo/i) == "weibo") {
+						//..............................
+						$("body").html('<img alt="" src="/portal/images/portal_guide.jpg" style="left:0px;top: 0px;position: absolute;">')
+			        }
+			        //ua.match(/QQ/i)=='qq'
+			        if (ua.match(/QQTheme/i) == "qqtheme") {
+						//...QQ......
+						//$("body").html('<img alt="" src="/portal/images/portal_guide.jpg" style="left:0px;top: 0px;position: absolute;">')
+			        }
+			        if (browser.versions.ios) {
+						//.........IOS...............
+			        }
+			        if(browser.versions.android){
+						//..............................
+			        }
+				} else {
+			        //............PC...............
+				}
+
+	});
+
+		/**
+		 * .........Wi-Fi......3.1............portal...........................
+		 */
+		var loadIframe = null;
+		var noResponse = null;
+		var callUpTimestamp = 0;
+		var distoken="";
+		function putNoResponse(ev) {
+			clearTimeout(noResponse);
+		}
+
+		function errorJump() {
+			var now = new Date().getTime();
+			if ((now - callUpTimestamp) > 4 * 1000) {
+				return;
+			}
+			$.tooltip('............................................................\n.................................', 4000, false);
+			//alert('............................................................\n.................................');
+		}
+
+		myHandler = function(error) {
+			errorJump();
+		};
+
+		function createIframe() {
+			var iframe = document.createElement("iframe");
+			iframe.style.cssText = "display:none;width:0px;height:0px;";
+			document.body.appendChild(iframe);
+			loadIframe = iframe;
+		}
+		/*.................................*/
+		function isIntranetIp(ip){
+			try {
+				if (!ip){
+					ip = document.domain;
+					if (!ip)
+						ip = window.location.host.split(":")[0];
+				}
+				ip.toLowerCase();
+				console.log('host:'+ip);
+				if(ip.indexOf('localhost')>-1) return true;
+				if(ip.indexOf('1.1.1.1')>-1) return true;
+				var a_ip = 0;
+				if(ip == "") return false;
+				var aNum = ip.split(".");
+				if(aNum.length != 4) return false;
+				a_ip += parseInt(aNum[0]) << 24;
+				a_ip += parseInt(aNum[1]) << 16;
+				a_ip += parseInt(aNum[2]) << 8;
+				a_ip += parseInt(aNum[3]) << 0;
+				a_ip=a_ip>>16 & 0xFFFF;
+				return( a_ip>>8 == 0x7F || a_ip>>8 == 0xA || a_ip== 0xC0A8 || (a_ip>=0xAC10 && a_ip<=0xAC1F) );
+			} catch (e){
+				console.log('........................' + e);
+				return true;
+			}
+		}
+	/*.................. */
+		function jsonpCallback(result) {
+			if (result && result.success) {
+				if(window.console){
+					console.log('WeChat will call up : ' + result.success + '  data:' + result.data);
+				}
+				var ua = navigator.userAgent;
+				//if (ua.indexOf("iPhone") != -1 || ua.indexOf("iPod") != -1 || ua.indexOf("iPad") != -1) { //iPhone
+				if (ua.indexOf("iPhone") != -1 || ua.indexOf("iPod") != -1 || ua.indexOf("iPad") != -1 || ua.toLocaleLowerCase().indexOf("samsungbrowser") != -1) {   //iPhone
+      				if(isIOSAutoPop()){
+						setTimeout(function(){
+							$.tooltip('........................IOS............................................................................................................................................................', 4000, false);
+
+						},2500);
+					}
+					noResponse = setTimeout(function () {
+						errorJump();
+					}, 3000);
+
+					document.location = result.data;
+				} else {
+
+					if ('false' == 'true') {
+						$.tooltip('[......]............................................................\n.................................', 4000, false);
+						return;
+					}
+
+					createIframe();
+					callUpTimestamp = new Date().getTime();
+					loadIframe.src = result.data;
+					noResponse = setTimeout(function() {
+						errorJump();
+					}, 3000);
+				}
+			} else if (result && !result.success) {
+				if(window.console){
+					console.log(result.data);
+				}
+				if (result.data && result.data.indexOf('get ticket error') > -1) {
+					errorJump();
+				} else {
+					if (result.data && result.data == 'Expired timestamp') {
+						alert(_("..............................................................."));
+						return;
+					}
+					alert(_(".................................Wi-Fi......"));
+				}
+			}
+		}
+		function isIOSAutoPop(){
+			var ua = navigator.userAgent;
+			var str=ua.substr(ua.indexOf('like Gecko) ')+12);
+			var length=str.split(' ').length;
+			if( length==1 && (ua.indexOf("iPhone") != -1 || ua.indexOf("iPod") != -1 || ua.indexOf("iPad") != -1 || ua.toLocaleLowerCase().indexOf("samsungbrowser") != -1)){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		/* ........................ */
+		function Wechat_GotoRedirect(appId, extend, timestamp, sign, shopId, authUrl, mac, ssid, bssid) {
+			//console.log('........................' + $('#terminalType').val() + "(1......... 2......... 3.........)");
+			//if ($('#terminalType').val() != '2') {
+			if(window.console){
+					console.log('........................' + $('#realTerminalType').val() + "(a......... b.........)");
+			}
+			var url;
+			if ($('#realTerminalType').val() != 'b') { // pc...
+				if(window.console){
+					console.log('url pc:'+url);
+				}
+				$(".main").show();
+				JSAPI.auth({
+					target : document.getElementById('weixin_wifi_auth_qrcode'),
+					appId : appId,
+					shopId : shopId,
+					extend : extend,
+					authUrl : authUrl + "&PCLianWiFi=PCLianWiFi"
+				});
+			} else { // .........
+				//.......................................
+				url = "https://wifi.weixin.qq.com/operator/callWechatBrowser.xhtml?appId=" + appId + "&extend=" + extend + "&timestamp=" + timestamp + "&sign=" + sign;
+
+				//......sign.................................3.1...............
+				if (authUrl && shopId) {
+
+					url = "https://wifi.weixin.qq.com/operator/callWechat.xhtml?appId=" + appId + "&extend=" + extend + "&timestamp=" + timestamp + "&sign=" + sign + "&shopId=" + shopId + "&authUrl=" + encodeURIComponent(authUrl) + "&mac=" + mac + "&ssid=" + ssid + "&bssid=" + bssid;
+
+
+				}	//......dom............script........................
+
+				//20180105 ................................................
+				/*
+				var weixinUrl = 'weixin://connectToFreeWifi/?apKey=_p33beta&appId='+appId+'&shopId='+shopId+'&authUrl='+encodeURIComponent(authUrl) +'&extend='+extend+'&timestamp='+timestamp+'&sign='+sign;    window.location=weixinUrl;
+				$.tooltip('..................weixinUrl:'+weixinUrl, 10000, false);
+				window.location=weixinUrl;
+				*/
+
+				if(window.console){
+					console.log('url:'+url);
+				}
+				var script = document.createElement('script');
+				script.setAttribute('src', url);
+				document.getElementsByTagName('head')[0].appendChild(script);
+
+			}
+
+		}
+	</script>
+
+	<script type="text/javascript">
+		var tservertypeid = $("#tservertypeid").val();
+		var portalVer = $("#portalVer").val();
+		var autouserid = 'radius_share';
+		var autopasswd = 'radius_share';
+
+		if ($('#autouserid').length > 0 && $('#autouserid').val() != '') {
+			autouserid = $("#autouserid").val();
+		}
+
+		if ($('#autopasswd').length > 0 && $('#autopasswd').val() != '') {
+			autopasswd = $("#autopasswd").val();
+		}
+
+
+
+		/*......url.........moto...*/
+		function getQueryVariable(variable) {
+			try {
+				var query = window.location.search.substring(1);
+				var vars = query.split(/[?&]/);
+				for (var i = 0; i < vars.length; i++) {
+					var pair = vars[i].split("=");
+					if (pair[0] == variable) {
+						if (pair[0] == "Qv") {
+							return vars[i].substr(3, vars[i].length);
+						}
+						return pair[1];
+					}
+				}
+			} catch (err) {
+
+			}
+			return "";
+		}
+
+
+
+		/* .................. */
+		function authPortalWx() {
+			var portalAuthUrl = "";
+			var dateStr = new Date().getTime();
+			dateStr = String(dateStr);
+			daetStr = dateStr.substr(dateStr.length - 8, dateStr.length);
+			console.log("..................");
+			//alert(daetStr)
+			if (portalVer == '3') { // wisrp
+				wispr_login_deal(autouserid+daetStr,autopasswd);
+			} else {		//............
+				portalAuthUrl = "/quickAuthShare.do?wlanacip=" + $("#wlanacip").val() + "&wlanacname=" + $("#wlanacname").val() + "&userId=" + autouserid + daetStr + "&passwd=" + autopasswd + "&mac=" + $("#mac").val() + "&wlanuserip=" + $("#wlanuserip").val();
+				//$("#openWxAuth").attr("src", portalAuthUrl);
+				 //alert("openwx_auth:" + portalAuthUrl);
+				   $.ajax({
+					   type : "POST",
+					   url: portalAuthUrl, //............
+					   data:{},
+					   dataType:"json",
+					   success: function (json) {
+							if(json.code=='0'){
+								distoken=json.distoken;
+							}else{
+								$.tooltip(json.message, tripFailTime, false);
+							}
+					    },
+					    error: function(json){
+						   //$.tooltip("..............................", tripFailTime, false);
+							console.log("..........................................");
+					    }
+				   });
+			}
+		}
+
+		//........................
+		function appoffline(){
+			var discoonurl="/httpservice/appoffline.do?wlanacip=" + $("#wlanacip").val() + "&wlanacname=" + $("#wlanacname").val() + "&userId=" + autouserid + daetStr + "&passwd=" + autopasswd + "&mac=" + $("#mac").val() + "&wlanuserip=" + $("#wlanuserip").val()+"&distoken="+distoken;
+			$.ajax({
+				url:discoonurl,
+				type:"POST",
+				data:{},
+				dataType:"JSON",
+				success:function(json){
+					if(json.code=='0'){
+						layer.msg(json.message, {
+							offset : 't',
+							anim : 6
+						});
+						window.location.href="http://1.1.1.1"
+					}else{
+						layer.msg(json.message, {
+							offset : 't',
+							anim : 6
+						});
+					}
+				},
+				error: function (e) {
+					console.log(e);
+					layer.msg('............', {
+						offset : 't',
+						anim : 6
+					});
+				}
+			});
+		}
+
+		/* ............ */
+		function openWxClient() {
+			var appid = $("#appid").val();
+			var extend = $.md5($("#f_Qv").val()) + "temp" + $("#pageid").val() + "temp" + tservertypeid + "temp" + portalVer + "temptrue";
+			if(window.console){
+					console.log("extend:" + extend);
+			}
+			// + "&ssid=" + $("#ssid").val()
+			var timestamp = new Date().getTime();
+			var shop_id = $("#shop_id").val(); // ......ID
+			var baseUrl = '/wxWifi.do?wlanacname=' + $("#wlanacname").val() + "&vlan=" + $("#vlan").val() + "&wlanacip=" + $("#wlanacip").val() + "&wlanuserip=" + $("#wlanuserip").val() + "&pageid=" + $("#pageid").val() + "&mac=" + $("#mac").val() + "&appid=" + appid + "&hs_server=" + $("#hs_server").val() + "&f_Qv=" + $("#f_Qv").val()  + "&portalVer=" + $("#portalVer_bean").val() + "&typeid=" + $("#typeid_bean").val() + "&wisprauth=" + $("#wisprauth").val();
+			if ($("#otherParam").length > 0) {
+				baseUrl = baseUrl + "&otherParam=" + $("#otherParam").val();
+			}
+
+			if ($('#realTerminalType').val() == 'b') {
+				if($("#initUrl").val()!=''){
+					baseUrl += "&url="+$("#initUrl").val();
+				}
+				if ($('#isopengzauth').length > 0) {
+					baseUrl = baseUrl + "&ismustgz=" + $("#isopengzauth").val();
+					if ($('#isopengzauth').val() == '1') {
+						if(window.console)
+						console.log("........................");
+					}
+				}
+
+				if ($('#isautoauth').length > 0) {
+					baseUrl = baseUrl + "&isautoauth=" + $("#isautoauth").val();
+					if ($('#isautoauth').val() == '1') {
+						if(window.console)
+						console.log("..................");
+					}
+				}
+			}
+
+			var authUrl = httpUrl + baseUrl; // ...............URL
+			if (tservertypeid == 'aruba' || tservertypeid == 'arubaap') {
+				if(window.console){
+						console.log("aruba_ap...ac,...url............");
+				}
+				authUrl = $("#serverAddress").val() + baseUrl;
+			}
+			if(window.console){
+					console.log("openwx_url:" + authUrl);
+			}
+			var mac = $("#mac").val(); // .........MAC......
+			var ap_ssid = $("#wxSSID").val(); // ap.........ssid
+			var bssid = $("#bssid").val(); // ap.........mac......
+			var secretkey = $("#secretkey").val();
+			var sign = $.md5(appid + extend + timestamp + shop_id + authUrl + mac + ap_ssid + bssid + secretkey); // ............
+			//............
+			//var sign = $.md5(appid + extend + timestamp + shop_id + authUrl + mac + ap_ssid +  secretkey); // ............
+
+			Wechat_GotoRedirect(appid, extend, timestamp, sign, shop_id, authUrl, mac, ap_ssid, bssid);
+		}
+
+		/* ..................... */
+		var countSecond = 1;
+		var openWXInterval;
+		function sleepAndOpenWX(second) {
+			countSecond = second;
+			openWXInterval = setInterval(function() {
+				if (countSecond == 0) {
+					if(window.console){
+							console.log("..................");
+					}
+					openWxClient();
+					clearTimeout(openWXInterval);
+				}else {
+					if(window.console)
+						console.log("......" + countSecond + "..................");
+				}
+				countSecond = countSecond - 1;
+			}, 1000);
+		}
+
+		/*...............wifi */
+		$("#wxSwitch").bind("click", function() {
+
+				if ($("#isopengzauth").val() == '1') {
+					$.tooltip('........................................................................!..................,...........', 4000, false);
+				}else{
+					if (portalVer == '3') { // wisrp
+						$.tooltip('......................................................!..................,...........', 4000, false);
+					}else{
+						$.tooltip('..................,...........', 4000, false);
+					}
+				}
+				if ($("#listwxwifiauth").val() == '1') {
+					if ($("#isautoauth").length > 0 && $("#isautoauth").val() == '1') {
+						if(window.console)
+							console.info('.......................................');
+						//20180105 ..........................................
+						if(!isIOSAutoPop()){
+							authPortalWx();
+						}
+					}
+					sleepAndOpenWX(2);
+					//sleepAndDisconn(3);
+				} else {
+					window.location.href = "weixin://";
+				}
+
+
+		});
+		//..................................................................
+
+	//function authMes(){
+		if($("#act").val()=='LOGINSUCC'){
+			var message = $("#errMessage").val();
+			var class1 = document.getElementsByClassName("common2");
+			//console.log(class1);
+			var userId = $("#wispr_userId").val();
+			//console.log('..................:'+userId);
+			console.log('.....................:'+message);
+			if(userId!=''&&message != '' && (message.indexOf('...............')>-1 || message.indexOf('.................................')>-1 || message.indexOf('.................................')>-1)){
+				var i = 0;
+				var n = setInterval(function() {
+					i++;
+			        $.ajax({
+			            type : "post",
+			            url: "getAuthResult.do", //............
+						data:{
+							userId : userId
+						},
+						dataType:"json",
+			            success: function (json) {
+			                var result = json.check;//......ajax..............................
+			               	console.log(result);
+							console.log('i='+i);
+							if(result != null && result != '' && result != '1'){
+								for(var j = 0;j<class1.length;j++){
+									//console.log(j+'---'+class1[j].innerHTML)
+									if(class1[j].innerHTML.indexOf('.................................')>-1 || message.indexOf('.................................')>-1){
+										class1[j].innerHTML =result;
+										break;
+									}
+								}
+								//$(".common2").html(result);
+								clearInterval(n);
+							}else if(i==20){
+								clearInterval(n);
+							}
+
+							for(var j = 0;j<class1.length;j++){
+								//console.log(j+'---'+class1[j].innerHTML)
+								if(class1[j].innerHTML.indexOf('......')>-1){
+									JsGotoRedirect();
+								}
+							}
+			            },
+						error: function(json){
+							console.log('......ajax......,...............');
+						}
+			        });
+			    }, 2000);
+			}else{
+				JsGotoRedirect();
+			}
+
+			//console.log('............');
+		}
+	//}
+		//..............................
+		function sleepAndGoCharge(second,accountId) {
+			var wlanuserip=$("#wlanuserip").val();
+			var wlanacname=$("#wlanacname").val();
+			console.log("........................wlanuserip:"+wlanuserip+",........."+accountId);
+			// ...........................
+			if(isIntranetIp()){
+				authPortalWx(); // ............
+			}
+			countSecond = second;
+			openWXInterval = setInterval(function() {
+				if (countSecond == 0) {
+					if(window.console)
+						console.log("........................");
+					clearTimeout(openWXInterval);
+					var chageUrl="/self/onlineCharge.do?accountId="+accountId+"&wlanuserip="+wlanuserip+"&wlanacname="+wlanacname+"&distoken="+distoken;
+					var mobile_flag = isMobile();
+					var width='90%',height='90%';
+			        if(mobile_flag){
+						var bankReturHostIp= 'http://';
+						// .....................
+						if(bankReturHostIp!="http://") {
+							chageUrl=bankReturHostIp+chageUrl; // ............+............
+						}
+						window.location.href = chageUrl;
+			        }else{
+						console.log("PC.........URL:"+chageUrl);
+						 layer.open({
+							type:2,
+							title: 'PORTAL............',
+							maxmin: false,//...............
+							btn:[],
+							closeBtn: 1,
+							shade: 0.6,
+							shadeClose: false, //chick shadeClose.....................
+							area: [width,height],
+							content: chageUrl+"?accountId="+accountId
+						});
+					}
+				}else {
+					if(window.console)
+						console.log("......" + countSecond + "........................");
+				}
+				countSecond = countSecond - 1;
+			}, 1000);
+		}
+
+
+		$("#recharge").on("click",function(){
+			 portalCharge();
+		});
+
+
+
+		function portalCharge(){
+			
+	     	//........................................................................
+			if ($("#userId").val() == "") {
+				$.tooltip('.....................', tripFailTime, false);
+				$("#userId").focus();
+				return false;
+			}
+
+		 	if ($("#passwd").val() == "") {
+				$.tooltip('...............', tripFailTime, false);
+				$("#passwd").focus();
+				return false;
+			}
+
+			var userId = $("#userId").val();
+			var passwd = $("#passwd").val();
+			var pageid = $("#pageid").val();
+			$.ajax({
+				url : "/httpservice/checkUserPwd.do",
+				type : "POST",
+				data : {
+					userId : userId,
+					passwd:passwd,
+					pageid:pageid
+				},
+				dataType : "json",
+				success : function(json) {
+					//alert(json.cookieValue);
+					switch (json.check) {
+						case '0':
+							$.tooltip('............,...........................', tripFailTime, false);
+							sleepAndGoCharge(2,json.accountId);
+							break;
+						case '1':
+							$.tooltip('............', tripFailTime, false);
+							break;
+						case '2':
+							$.tooltip('...............', tripFailTime, false);
+							break;
+						case '3':
+							$.tooltip('............', tripFailTime, false);
+							break;
+						case '4':
+							$.tooltip('.................................', tripFailTime, false);
+							break;
+						case '5':
+							$.tooltip('.............................................', tripFailTime, false);
+							break;
+					}
+				},
+				error : function(json) {
+					$.tooltip('........................!', tripFailTime, false);
+				}
+			});
+			
+		}
+
+		//.........ios............wifi...............
+		if($("#isIosAuthPop").val()=="1"){
+			//............
+			openWxClient();
+		}
+
+
+		if(isIOSAutoPop()){
+			if ($("#isautoauth").val().length > 0 && $("#isautoauth").val() == '1' && $("#act").val() !='LOGINSUCC') {
+				setInterval(authPortalWx(), 1000);
+			}
+  			var urlParameter=$("#urlParameter").val();
+			var logonUrl="/webauth.do?"+urlParameter+"&isIosAuthPop=1"
+			$("#wxSwitch").attr("target","_system");
+			$("#wxSwitch").attr("href",logonUrl);
+			$("#wxSwitch").attr("id","");
+		}
+
+		// ........................
+		function toChangeGroup(){
+			var width1="80%",height1="90%";
+			if(isMobile()){
+				width1='100%';
+				height1='100%';
+			}
+			var userId = $("#userId").val()
+			var portalId=$("#pageid").val();
+			var wlanacip=$("#wlanacip").val();
+			var wlanuserip=$("#wlanuserip").val();
+			var wlanacname=$("#wlanacname").val();
+			layer.open({
+				type:2,
+				title: 'PORTAL..................',
+				maxmin: true,//...............
+				btn:[],
+				closeBtn: 1,
+				shade: 0.6,
+				shadeClose: false, //chick shadeClose.....................
+				area: [width,height],
+				content: "/self/toChangeGroup.do?userId="+userId+"&portalId="+portalId+"&wlanacip="+wlanacip+"&wlanuserip="+wlanuserip+"&wlanacname="+wlanacname
+			});
+		}
+
+		function toChangeOperator(){
+			var width1="80%",height1="90%";
+			if(isMobile()){
+				width1='100%';
+				height1='100%';
+			}
+			var userId = $("#userId").val()
+			var portalId=$("#pageid").val();
+			var wlanacip=$("#wlanacip").val();
+			var wlanuserip=$("#wlanuserip").val();
+			var wlanacname=$("#wlanacname").val();
+			layer.open({
+				type:2,
+				title: 'PORTAL.....................',
+				maxmin: true,//...............
+				btn:[],
+				closeBtn: 1,
+				shade: 0.6,
+				shadeClose: false, //chick shadeClose.....................
+				area: [width,height],
+				content: "/self/toChangeOperator.do?userId="+userId+"&portalId="+portalId+"&wlanacip="+wlanacip+"&wlanuserip="+wlanuserip+"&wlanacname="+wlanacname
+			});
+		}
+
+		function toRemoveMac(){
+			var width1="80%",height1="90%";
+			if(isMobile()){
+				width1='100%';
+				height1='100%';
+			}
+			var userId = $("#userId").val()
+			var portalId=$("#pageid").val();
+			var wlanacip=$("#wlanacip").val();
+			var wlanuserip=$("#wlanuserip").val();
+			var wlanacname=$("#wlanacname").val();
+			layer.open({
+				type:2,
+				title: 'PORTAL......MAC......',
+				maxmin: true,//...............
+				btn:[],
+				closeBtn: 1,
+				shade: 0.6,
+				shadeClose: false, //chick shadeClose.....................
+				area: [width,height],
+				content: "/self/toRemoveMac.do?userId="+userId+"&portalId="+portalId+"&wlanacip="+wlanacip+"&wlanuserip="+wlanuserip+"&wlanacname="+wlanacname
+			});
+		}
+	</script>
+<!--/c:if-->
+<!-- .................. -->
+<script type="text/javascript" src="/portal/js/jquery.slideBox.js"></script>
+<script type="text/javascript" src="/portal/js/page_init.js"></script>
+
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sun Mar 30 22:14:42 CST 2025</time>
+    <url><![CDATA[http://172.16.4.32/webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D]]></url>
+    <host ip="172.16.4.32">172.16.4.32</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D]]></path>
+    <extension>do</extension>
+    <request base64="false"><![CDATA[POST /webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D HTTP/1.1
+Host: 172.16.4.32
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: http://172.16.4.32/webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 380
+Origin: http://172.16.4.32
+Connection: keep-alive
+Cookie: null; JSESSIONID-BOSS-1=44B0083446F56C4ED38F20DC09AA1EB9
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+hostIp=http%3A%2F%2F127.0.0.1%3A8081%2F&loginType=&auth_type=0&isBindMac1=0&pageid=1&templatetype=1&listbindmac=0&recordmac=0&isRemind=1&loginTimes=&groupId=&distoken=&echostr=&url=&isautoauth=&notice_pic_loop1=%2Fportal%2Fuploads%2Fpc%2Fdemo3%2Fimages%2Flogo.jpg&notice_pic_loop2=%2Fportal%2Fuploads%2Fpc%2Fdemo3%2Fimages%2Frrs_bg.jpg&userId=202309032226&passwd=213990&remInfo=on]]></request>
+    <status>200</status>
+    <responselength>24719</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 
+Server: bossWebV1.0.1
+Date: Sun, 30 Mar 2025 14:14:51 GMT
+Content-Type: text/html;charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-FRAME-OPTIONS: SAMEORIGIN
+REFERRER-POLICY: STRICT-ORIGIN-WHEN-CROSS-ORIGIN
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: master-only
+X-Download-Options: noopen
+X-XSS-Protection: 1
+Set-Cookie: null;SameSite=strict
+Cache-Control: no-store
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Set-Cookie: remeberMeCookie=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+Set-Cookie: remeberMeCookie=0ce5e20495843f540f60a913f2e91111c3c80468487c67b47c622c153c5a0f05d132865c992d7f176d9c0dd5e3d4b7d5; Max-Age=63072000; Expires=Tue, 30-Mar-2027 14:14:51 GMT; Path=/
+Set-Cookie: portal_token=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+Set-Cookie: portal_token=0ce5e20495843f540f60a913f2e911111736bde2524b7c49d27a08c538a0bfa7496a647881398ff4; Max-Age=63072000; Expires=Tue, 30-Mar-2027 14:14:51 GMT; Path=/
+Content-Language: en-US
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src *;style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';img-src * data:;worker-src * blob:;font-src 'self' data:;
+X-XSS-Protection: 1
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+X-Permitted-Cross-Domain-Policies: master-only
+X-Download-Options: noopen
+Permissions-Policy: interest-cohort=()
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+	<title>............</title>
+	
+
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=7,IE=9,IE=EDGE">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="no-cache" />
+<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<meta HTTP-EQUIV="expires" CONTENT="0">
+
+
+
+<script type="text/javascript" src="/portal/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/portal/js/jquery.layerModel.js"></script>
+
+<!--[if lt IE 9]>
+    <script type="text/javascript"  src="/portal/js/ie/respond.js"></script>
+<![endif]-->
+
+
+	
+	
+
+
+<link href="/portal/css/portalPageBase.css" type="text/css" media="all" rel="stylesheet" />
+<link href="/portal/css/layerModel.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="/css/animate.min.css"/>
+
+	<link rel="stylesheet" href="/portal/uploads/pc/demo3/css/login.css?t=20210901">
+	<style>
+		.noticeInfo{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+<form id="goLoginForm" method="post">
+<input id="hostIp" name="hostIp" type="hidden" value="http://127.0.0.1:8081/" />
+<input id="loginType" name="loginType" type="hidden" value="" />
+<input id="auth_type" name="auth_type" type="hidden" value="0" /> 
+<input id="isBindMac1" name="isBindMac1" type="hidden" value="0" /> 
+<input id="pageid" type="hidden" name="pageid" value="1" /> 
+<input id="userid1" type="hidden" value="" disabled="disabled" /> 
+<input id="passwd1" type="hidden" value="" disabled="disabled" /> 
+<input id="listqqauth" type="hidden" name="listqqauth" value="" disabled="disabled"/>
+<input id="listwbauth" type="hidden" name="listwbauth" value="" disabled="disabled"/>
+<input id="listwxauth" type="hidden" name="listwxauth" value="0" disabled="disabled"/>
+<input id="listtwiceauth" type="hidden" name="listtwiceauth" value="0" disabled="disabled"/> <!-- ............ -->
+<input id="terminalType" type="hidden" name="templatetype" value="1"/>
+<input id="listbindmac" type="hidden" name="listbindmac" value="0"/>
+<input id="recordmac" type="hidden" name="recordmac" value="0"/>
+<input id="listgetpass" type="hidden" value="0"/>
+<input id="areaId" type="hidden" value="0"/>
+<input type="hidden" id="logoutflag" value="2" />
+<input type="hidden" id="logouturl" value="" />
+<input type="hidden" id="listwxsysauth" value="" />
+<input type="hidden" id="listwxwifiauth" value="" />
+<input type="hidden" id="logoutgourl" value="" />
+
+<!-- ............ -->
+<input type="hidden" id="isRemind" name="isRemind" value="1"/>
+<input id="urlParameter" type="hidden" name="urlParameter" value="wlanuserip=172.18.2.60&amp;wlanacname=bras&amp;wlanusermac=F4-46-37-30-67-1D" disabled="disabled"/>
+<input id="act" type="hidden" value="LOGINSUCC" disabled="disabled"/> 
+
+<input id="loginTimes" type="hidden" name="loginTimes" value=""/>
+<input id="groupId" type="hidden" name="groupId" value=""/>
+<input id="userid2" type="hidden" value="" disabled="disabled" /> 
+<input id="passwd2" type="hidden" value="" disabled="disabled" /> 
+<input id="wbUrl" type="hidden" value="/wbDeal.do?wlanuserip=172.18.2.60&amp;wlanacname=bras&amp;wlanusermac=F4-46-37-30-67-1D&systemtype=1&pageid=1"/>
+<input id="qqUrl" type="hidden" value="/wbDeal.do?wlanuserip=172.18.2.60&amp;wlanacname=bras&amp;wlanusermac=F4-46-37-30-67-1D&systemtype=2&pageid=1"/>
+
+<input id="portalVer" type="hidden" value="0"/> <!-- ............ -->
+<input id="tservertypeid" type="hidden" value="h3c" />
+
+<input id="wlanuserip" name="wlanuserip" type="hidden" value="172.18.2.60" disabled="disabled"/>
+<input id="wlanacname" name="wlanacname" type="hidden" value="bras" disabled="disabled"/>
+<input id="distoken" name="distoken" type="hidden" value="3e1f9e54637b21c1b6fc5cbb880f453f" />
+
+<!-- .................. -->
+<input id="userIp" name="userIp" type="hidden" value="" disabled="disabled"/>
+<input id="echostr" type="hidden" name="echostr" value=""/>
+
+<input id="wlanacip" name="wlanacip" type="hidden" value="172.16.4.254" disabled="disabled"/>
+<input id="ssid" type="hidden" value=""/>
+<input id="vlan" type="hidden" value=""/>
+<input id="mac" type="hidden" value=""/>
+<input id="initUrl" type="hidden" value="" name="url"/> <!-- ...............URL -->
+<input id="errMessage" type="hidden" value="............"/>
+<input id="wispr_userId" type="hidden" value="202309032226" disabled="disabled" /> <!-- wispr............... -->
+<input id="wispr_passwd" type="hidden" value="213990" disabled="disabled" /> <!-- wispr............... -->
+<input id="f_Qv" type="hidden" value="" name="f_Qv" disabled="disabled"/> <!-- moto ac/ap ...... -->
+<input id="hs_server" type="hidden" value="" name="f_hs_server"  disabled="disabled"/><!-- moto ac/ap ...... -->
+
+<input id="portalVer_bean" type="hidden" value="0" disabled="disabled" /><!-- wispr........................ -->
+<input id="typeid_bean" type="hidden" value="" disabled="disabled" /><!-- wispr........................ -->
+<input id="realTerminalType" type="hidden" value="a" disabled="disabled" /><!-- .................. -->
+<input id="operatorastrict" type="hidden"  value="0,1,2,3" disabled="disabled" /><!-- ...............  ......-->
+
+
+<input id="serverAddress" type="hidden" value="" disabled="disabled" />
+
+
+<input id="connUserId" type="hidden" value="202309032226" disabled="disabled" />
+<input id="connPasswd" type="hidden" value="213990" disabled="disabled" />
+
+
+<!-- .........wifi.........start -->
+<input id="wisprauth" type="hidden" value="" disabled="disabled" />
+<input id="autouserid" type="hidden" value="" disabled="disabled" />
+<input id="autopasswd" type="hidden" value="" disabled="disabled" />
+<input id="isautoauth" name="isautoauth" type="hidden" value="" />
+<input id="isopengzauth" type="hidden" value="" disabled="disabled" />
+<input id="ismustgz" type="hidden" value="" disabled="disabled" />
+<input id="timestamp" type="hidden" value="0" disabled="disabled"/>
+<input id="secretkey" type="hidden" value="" disabled="disabled" />
+<input id="shop_id" type="hidden" value="" disabled="disabled" />
+<input id="bssid" type="hidden" value="" disabled="disabled" />
+<input id="wxSSID" type="hidden" value="" disabled="disabled" />
+<input id="appid" type="hidden" value="" disabled="disabled" />
+<input id ="goPageName" type="hidden" value="" disabled="disabled"/>
+<input id="isIosAuthPop" type="hidden" value="" disabled="disabled"/>
+
+<!-- .........wifi.........end -->
+
+<input id="onlinepayvalue" type="hidden" value=" " disabled="disabled"/>
+
+<!---..................--->
+<input type="hidden" id="openId" value=""/>
+<input type="hidden" id="wxcheckmobile" value=""/><!-- .................. -->
+<input type="hidden" id="selfLoginUrl" value="" />
+<input type="hidden" id="modifyPwdFlag" value="0" />
+
+<!--............-->
+<input type="hidden" value="/portal/uploads/pc/demo3/images/logo.jpg" name="notice_pic_loop1" />
+<input type="hidden" value="/portal/uploads/pc/demo3/images/rrs_bg.jpg" name="notice_pic_loop2" />
+<div class="content_warp">
+	<div class="top">
+		<div class="content">
+			<div class="logo" >
+				<img id="notice_logo"> <span
+					class="line">|</span> <span class="sname">...........................</span>
+			</div>
+		</div>
+	</div>
+	<div class="main_warp">
+		<div class="main_form">
+			<!-- style="background-image: url(/portal/uploads/pc/demo3/images/rrs_bg.jpg); background-size: 100% 100%;" -->
+			<div class="show_pic" >
+				<div id="notice_pic2_box" class="slideBox">
+					<ul id="notice_pic2" class="items"></ul>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="login_form">
+					<div class="layui-form-item">
+						<div class="form-title" id="dateMessage"></div>
+					</div>
+
+					<!--.........-->
+					
+					<!--.........-->
+					
+						<div class="login_out">
+							<div class="title">
+								<p class="succ-text" id="successTitle">...........................!</p>
+								
+								
+									<div class="common2">............ </div>
+								
+
+
+							</div>
+							
+							<p>.......................................</p>
+							<div>
+								<button id="online" type="button"
+										class="layui-btn layui-btn-fluid">......</button>
+							</div>
+							
+							
+							
+							
+							
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="foot">
+        <div class="content">
+            <div class="title">
+                <ul>
+                    <li class="active" onclick="change_message(this,'system_message')"><i class="layui-icon">&#xe645;</i>............<i class="layui-icon triangle">&#xe623;</i></li>
+                </ul>
+            </div>
+            <!--............-->
+            <div class="list">
+                <ul class="system_message">
+                    <li><div id="notice_message1" class="messageStyle"></div></li>
+                    <li><div id="notice_message2" class="messageStyle"></div></li>
+                    <li><div id="notice_message3" class="messageStyle"></div></li>
+                    <li><div id="notice_message4" class="messageStyle"></div></li>
+                    <li><div id="notice_message5" class="messageStyle"></div></li>
+                    <li><div id="notice_message6" class="messageStyle"></div></li>
+                </ul>
+            </div>
+            <div class="layui-clear"></div>
+
+			
+				<div class="list">
+						<br />
+				</div>
+			
+        </div>
+    </div>
+	<div class="copyright">
+		<span></span>
+	</div>
+</div>
+<script>
+    $(function() {
+        $(".toggle_account_message").on("click",function(){
+            var _account_message = $(".account_message");
+            var _toggle_account_message = $(".account.toggle_account_message");
+            _toggle_account_message.toggleClass("layui-hide");
+            _account_message.removeClass("layui-hide");
+            _account_message.toggleClass("layui-anim-fadeout").toggleClass("layui-anim-fadein");
+            _account_message.hasClass("layui-anim-fadeout")? _account_message.addClass("layui-hide"):"";
+        });
+
+        var number = $('.login_form').find(".layui-form-item").length;
+        console.log("number"+number);
+        if(number>5){
+            $(".login_form").attr("style","top:15%;");
+        }
+        if(number>6){
+            $(".login_form").attr("style","top:10%;");
+        }
+        if(number>7){
+            $(".login_form").attr("style","top:8%;");
+        }
+
+    });
+
+
+    $(function(){
+        var  termsDesc = $("#termsDesc");
+        $("#desc_lb").on("click",function(){
+            termsDesc.toggleClass("divCheckBoxSel");
+            termsDesc.toggleClass("divCheckBoxNoSel");
+        });
+        var remInfo = $("#remInfo");
+        $("#remInfo").on("click",function(){
+            remInfo.toggleClass("divCheckBoxSel");
+            remInfo.toggleClass("divCheckBoxNoSel");
+        });
+    });
+    window.onload = function() {
+        (function pwdChecked() {
+            if(document.getElementById('remInfo')) {
+                var pwd = document.getElementById('remInfo');
+                if(pwd.className == 'divCheckBoxNoSel') {
+                    pwd.checked = false
+                } else if (pwd.className == 'divCheckBoxSel') {
+                    pwd.checked = true
+                }
+            } else {
+
+            }
+        })();//........................
+    }
+
+</script>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/xadmin/lib/layui/css/layui.css">
+
+<!-- ................................. -->
+<div id="first_allscreen" class="slideBox" style="display: none;">
+	<ul id="first_allscreen_desc" class="items"></ul>
+</div>
+
+<!-- ................................. -->
+<div id="notice_pic_first" class="slideBox" style="display: none;">
+	<ul id="notice_first" class="items"></ul>
+</div>
+
+<!-- ..................... -->
+<div id="openWxFixed"
+	style="z-index: 999999;position: fixed; bottom: 0px; left: 0px; width: 100%; height: 4.5%; text-align: center; display: none; background:rgba(0, 0, 0, 0.92); opacity: 0.75; font-size: 1.2em;color:#62FF00;"></div>
+
+<!-- ................................. -->
+<div id="center_allscreen" class="slideBox" style="display: none;">
+	<ul id="center_allscreen_desc" class="items"></ul>
+</div>
+
+<!-- ................................. -->
+<div id="notice_pic_center" class="slideBox" style="display: none;z-index: 10000;width:100%;height:100%;">
+	<ul id="notice_center" class="items" style="height:100%;"></ul>
+</div>
+
+<!-- ............ -->
+<div id="floatNotice" style="position: fixed; display: none;"></div>
+<script src="/js/jquery.hDialog.js"></script>
+
+
+	<script>window.questJSON = [];</script>
+
+
+<script type="text/javascript">
+	window.noticeJSON = []; //........................
+	window.clientWidth = $(window).width(); //.......................................
+	window.clientHeight = $(window).height(); //.......................................
+	window.httpUrl = "http://" + window.location.host;
+	var tmpTag = "https:" == document.location.protocol ? false : true;
+	if (tmpTag) {
+		window.httpUrl = "http://" + window.location.host;
+	} else {
+		window.httpUrl = "https://" + window.location.host;
+	}
+	window.tripFailTime = 5 * 1000; //.................................5S...
+	if(window.console){
+		console.log("......URL..." + httpUrl);
+	}
+	//.........
+	var now = new Date(),hour = now.getHours()
+	var act=$("#act").val();
+	console.log("..............."+hour+",act:"+act);
+	var val502 = "............"; // ...........................
+	if(hour < 6){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 9){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 12){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 14){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 17){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 19){
+		$("#dateMessage").html("........................"+val502);
+	}else if (hour < 23){
+		$("#dateMessage").html("........................"+val502);
+	}else{
+		$("#dateMessage").html(".........................................."+val502);
+	}
+
+	if(act=='LOGINSUCC'){
+		$("#dateMessage").hide();
+		var accountId=$("#connUserId").val();
+		var message="";
+		if(hour < 6){
+			message='............';
+		}else if (hour < 9){
+			message='............';
+			//$("#successTitle").html("............");
+		}else if (hour < 12){
+			message='............';
+			//$("#successTitle").html("............");
+		}else if (hour < 14){
+			message='............';
+			//$("#successTitle").html("............");
+		}else if (hour < 17){
+			message='............';
+			//$("#successTitle").html("............");
+		}else if (hour < 19){
+			message='............';
+			//$("#successTitle").html("............");
+		}else if (hour < 23){
+			message='............';
+			//$("#successTitle").html("............");
+		}else{
+			message='..............................';
+			//$("#successTitle").html("..............................");
+		}
+		console.log(accountId)
+		if(accountId!=""){
+			message=accountId+"..."+message;
+			$("#successTitle").html(message);
+		}else{
+			$("#successTitle").html(message);
+
+		}
+
+	}
+</script>
+
+<!-- wispr..................... -->
+<iframe id="logoutFrame" style="display: none;" src=""></iframe>
+<iframe id="loginFrame" style="display: none;" src=""></iframe>
+
+<script type="text/javascript">
+			var motoCount = 1;
+			var interval;
+			var  tip = $("#openWxFixed");
+			//........................
+			function JsRedirect() {
+				if (motoCount >= 0) {
+					$("body").append('<iframe src="/portal/moto_wispr.html" style="display:none;"></iframe>');
+				} else {
+					clearTimeout(interval);
+				}
+				--motoCount;
+			}
+
+			// wispr...............
+			function wisprLogoutDo(){
+				var portalVer = $("#portalVer").val();
+				if(portalVer == '3') {//wispr.........
+					$.tooltip('..................!', tripFailTime, false);
+					autoClose();
+				}
+			}
+
+			function autoClose(){
+				var numTime = 6;
+				tip.show();
+				var interval = setInterval(function() {
+					--numTime;
+					showTip(numTime, tip); // ...............
+					if (numTime == 0) {
+						showTip(numTime, tip); // ............
+						clearTimeout(interval);
+						closeW();
+					}
+				}, 1000);
+			}
+
+			function  showTip(num, tip_obj){
+				if(num>0){
+					$(tip_obj).html(num+'...........................!');
+				}else{
+					$(tip_obj).html('...............!...........................!');
+				}
+
+			}
+			function closeW(){
+				// var userAgent = navigator.userAgent;
+				// if (userAgent.indexOf("Firefox") != -1 || userAgent.indexOf("Presto") != -1) {
+				// 	window.location.replace("about:blank");
+				// } else {
+				// 	window.opener = null;
+				// 	window.open("", "_self");
+				// 	window.close();
+				// }
+				location.href = 'http://1.1.1.1'
+			}
+		//.........
+		function autoSetTimeOut() {
+			motoCount = 1;
+			interval = setInterval(JsRedirect, 1000);
+		}
+		// wispr..................
+		function wispr_logout_deal(closeFlag) {
+			var tservertypeid = $("#tservertypeid").val();
+			var tserverip = $("#tserverip").val();
+			var src ="";
+			if (tservertypeid == 'aruba') {
+				src = "http://" + tserverip + "/auth/logout.html";
+			}else 	if (tservertypeid == 'ruckus') {
+				src = "http://" + tserverip + ":9997/logout";
+			}else if (tservertypeid == 'motorola') { //MOTO
+				src = "/portal/moto_discon.html";
+				autoSetTimeOut();
+			}else 	if (tservertypeid == 'axe') {
+				src = "http://1.1.1.1/userlogout.massrv?pap=0";
+			}else if(tservertypeid == 'mikrotik') {//RouterOS
+				//var splitUrl = $("#initUrl").val();
+				//http://172.31.0.1/logout ...............
+
+				//if(typeof(splitUrl) == 'undefined' || splitUrl==null || splitUrl ==''){
+				//	splitUrl = $("#f_Qv").val();
+				//}
+
+				var splitUrl = $("#f_Qv").val();
+				//alert("f_Qv:"+splitUrl);
+
+				if(splitUrl.split(",").length > 1){
+					splitUrl = splitUrl.split(",")[0];
+				}
+				var  k = splitUrl.indexOf("login");
+				var	iInitHead =  splitUrl.indexOf("https");
+				if(window.console){	console.log(splitUrl.substring(0,k));		}
+				splitUrl = splitUrl.substring(0,k);
+				if(iInitHead != -1){ //......https replace..................
+						splitUrl = "http"+splitUrl.substring(5,splitUrl.length);
+				}
+				src = splitUrl+"logout";
+				//alert("src:"+src);
+
+			}else 	if (tservertypeid == 'fc') {
+				src = "http://1.1.1.1/cgi-bin/ace_web_auth.cgi?logout=1&login_page=http://163.com";
+			}
+			if(window.console){	console.log("..............."+tservertypeid+",url:"+src );	}
+
+			$("#logoutFrame").attr("src", src);
+
+			if(closeFlag=='1'){
+				//alert(closeFlag);
+				wisprLogoutDo();
+			}
+
+			//	alert("...............");
+			//var urlPam = $("#urlParameter").val();
+			//$("#goLoginForm").attr("action", "/webdisconn.do?" + urlPam).submit();
+		}
+
+
+		// wispr..................
+		function wispr_login_deal(autouserid,autopasswd) {
+			var tservertypeid = $("#tservertypeid").val();
+			var portalAuthUrl="";
+			if (tservertypeid == 'aruba') {//ARUBA
+				portalAuthUrl = "http://securelogin.arubanetworks.com/auth/index.html/u?username=" + autouserid + "&password=" + autopasswd;
+			} else if (tservertypeid == 'arubaap') {// ARUBAAP
+				portalAuthUrl = "http://securelogin.arubanetworks.com/cgi-bin/login?user=" + autouserid + "&password=" + autopasswd + "&cmd=authenticate";
+			} else if (tservertypeid == 'motorola') { //MOTO
+				portalAuthUrl = "/portal/moto_wispr.html";
+				autoSetTimeOut();
+			}else if (tservertypeid == 'ruckus') {//......
+				portalAuthUrl = "http://" + $("#wlanacip").val() + ":9997/login?username=" + autouserid + "&password=" + autopasswd + "&cmd=authenticate";
+			}else if(tservertypeid == 'axe'){// ......
+				portalAuthUrl =  "http://1.1.1.1/userlogin.massrv?pap=0&userid="+ autouserid + "&passwd="+autopasswd;
+			}else if(tservertypeid == 'mikrotik') {//RouterOS
+					var splitUrl = $("#initUrl").val();
+					if(typeof(splitUrl) == 'undefined' || splitUrl==null || splitUrl ==''){
+						splitUrl = $("#f_Qv").val();
+					}
+					if(splitUrl.split(",").length > 1){
+						splitUrl = splitUrl.split(",")[0];
+					}
+					var	iInitHead =  splitUrl.indexOf("https");
+					if(iInitHead != -1){ //......https replace..................
+						splitUrl = "http"+splitUrl.substring(5,splitUrl.length);
+					}
+					//http://172.31.0.1/login?username=1&password=1
+					portalAuthUrl = splitUrl+"?username="+autouserid+"&password="+autopasswd;
+			}else if(tservertypeid == 'fc'){// fc
+				portalAuthUrl =  "http://1.1.1.1/cgi-bin/ace_web_auth.cgi?btlogin=Login&username="+ autouserid + "&userpwd="+autopasswd;
+			}else if(tservertypeid == 'extreme'){// ............
+				portalAuthUrl =  "http://"+ $("#wlanacip").val() + "/req.php?url=any-value-here&username="+ autouserid + "&password="+autopasswd;
+ 				console.log("..............."+portalAuthUrl);
+ 				location.href = (portalAuthUrl);
+ 				return;
+			}
+			$("#loginFrame").attr("src", portalAuthUrl);
+			//	tip.html(portalAuthUrl).show();
+			if(window.console){console.log(".................."+tservertypeid+",url:"+portalAuthUrl );}
+
+		}
+
+
+</script>
+
+<!-- .............................. -->
+
+	<!-- ................................. -->
+	<div id="end_allscreen" class="slideBox" style="display: none;">
+		<ul id="end_allscreen_desc" class="items"></ul>
+	</div>
+
+	<!-- ................................. -->
+	<div id="notice_pic_end" class="slideBox" style="display: none;">
+		<ul id="notice_end" class="items"></ul>
+	</div>
+
+	<a id="newWindow" style="display: none;" target="_blank" href="#"></a>
+	<!-- ..................... -->
+	<input type="hidden" value="auth_success" id="auth_success" />
+	<input type="hidden" name="userId" value="202309032226" id="userId"></input>
+	<input type="hidden" name="other1" value="disconn" id="other1"></input>
+	<!-- ...............URL -->
+	<input type="hidden" name="loginType" />
+
+	<!-- ..................... -->
+	<script type="text/javascript" src="/portal/js/connect.succ.deal.js"></script>
+
+	<!-- wispr............ -->
+	
+
+</form>
+
+
+<!-- ..................... -->
+
+
+<!-- .................. -->
+<form id="command" action="/webauth.do?wlanuserip=172.18.2.60&amp;amp;wlanacname=bras&amp;amp;wlanusermac=F4-46-37-30-67-1D" method="post">
+	<script type="text/javascript">
+		var s = '';
+		console.log(s);
+		if (s != '') {
+			var g = "<span.*?>(.*?)</span>";
+			var tem = s.match(g)[1];
+			$.tooltip(tem, tripFailTime, false);
+		}
+
+		var wxcode = '';
+		var contenErr = '';
+		if (wxcode == '1') {
+			contenErr = ".......................................openId";
+		} else if (wxcode == '2') {
+			contenErr = ".]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sun Mar 30 22:14:32 CST 2025</time>
+    <url><![CDATA[http://172.16.4.32/xadmin/lib/layui/lay/modules/layer.js]]></url>
+    <host ip="172.16.4.32">172.16.4.32</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/xadmin/lib/layui/lay/modules/layer.js]]></path>
+    <extension>js</extension>
+    <request base64="false"><![CDATA[GET /xadmin/lib/layui/lay/modules/layer.js HTTP/1.1
+Host: 172.16.4.32
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: http://172.16.4.32/webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D
+Connection: keep-alive
+Cookie: null; JSESSIONID-BOSS-1=44B0083446F56C4ED38F20DC09AA1EB9
+
+]]></request>
+    <status>200</status>
+    <responselength>22768</responselength>
+    <mimetype>script</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: bossWebV1.0.1
+Date: Sun, 30 Mar 2025 14:14:32 GMT
+Content-Type: application/javascript
+Last-Modified: Thu, 09 Mar 2023 08:37:40 GMT
+Connection: keep-alive
+ETag: W/"64099ad4-5619"
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src *;style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';img-src * data:;worker-src * blob:;font-src 'self' data:;
+X-XSS-Protection: 1
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+X-Permitted-Cross-Domain-Policies: master-only
+X-Download-Options: noopen
+Permissions-Policy: interest-cohort=()
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Length: 22041
+
+/** layui-v2.4.5 MIT License By https://www.layui.com */
+ ;!function(e,t){"use strict";var i,n,a=e.layui&&layui.define,o={getPath:function(){var e=document.currentScript?document.currentScript.src:function(){for(var e,t=document.scripts,i=t.length-1,n=i;n>0;n--)if("interactive"===t[n].readyState){e=t[n].src;break}return e||t[i].src}();return e.substring(0,e.lastIndexOf("/")+1)}(),config:{},end:{},minIndex:0,minLeft:[],btn:["&#x786E;&#x5B9A;","&#x53D6;&#x6D88;"],type:["dialog","page","iframe","loading","tips"],getStyle:function(t,i){var n=t.currentStyle?t.currentStyle:e.getComputedStyle(t,null);return n[n.getPropertyValue?"getPropertyValue":"getAttribute"](i)},link:function(t,i,n){if(r.path){var a=document.getElementsByTagName("head")[0],s=document.createElement("link");"string"==typeof i&&(n=i);var l=(n||t).replace(/\.|\//g,""),f="layuicss-"+l,c=0;s.rel="stylesheet",s.href=r.path+t,s.id=f,document.getElementById(f)||a.appendChild(s),"function"==typeof i&&!function u(){return++c>80?e.console&&console.error("layer.css: Invalid"):void(1989===parseInt(o.getStyle(document.getElementById(f),"width"))?i():setTimeout(u,100))}()}}},r={v:"3.1.1",ie:function(){var t=navigator.userAgent.toLowerCase();return!!(e.ActiveXObject||"ActiveXObject"in e)&&((t.match(/msie\s(\d+)/)||[])[1]||"11")}(),index:e.layer&&e.layer.v?1e5:0,path:o.getPath,config:function(e,t){return e=e||{},r.cache=o.config=i.extend({},o.config,e),r.path=o.config.path||r.path,"string"==typeof e.extend&&(e.extend=[e.extend]),o.config.path&&r.ready(),e.extend?(a?layui.addcss("modules/layer/"+e.extend):o.link("theme/"+e.extend),this):this},ready:function(e){var t="layer",i="",n=(a?"modules/layer/":"theme/")+"default/layer.css?v="+r.v+i;return a?layui.addcss(n,e,t):o.link(n,e,t),this},alert:function(e,t,n){var a="function"==typeof t;return a&&(n=t),r.open(i.extend({content:e,yes:n},a?{}:t))},confirm:function(e,t,n,a){var s="function"==typeof t;return s&&(a=n,n=t),r.open(i.extend({content:e,btn:o.btn,yes:n,btn2:a},s?{}:t))},msg:function(e,n,a){var s="function"==typeof n,f=o.config.skin,c=(f?f+" "+f+"-msg":"")||"layui-layer-msg",u=l.anim.length-1;return s&&(a=n),r.open(i.extend({content:e,time:3e3,shade:!1,skin:c,title:!1,closeBtn:!1,btn:!1,resize:!1,end:a},s&&!o.config.skin?{skin:c+" layui-layer-hui",anim:u}:function(){return n=n||{},(n.icon===-1||n.icon===t&&!o.config.skin)&&(n.skin=c+" "+(n.skin||"layui-layer-hui")),n}()))},load:function(e,t){return r.open(i.extend({type:3,icon:e||0,resize:!1,shade:.01},t))},tips:function(e,t,n){return r.open(i.extend({type:4,content:[e,t],closeBtn:!1,time:3e3,shade:!1,resize:!1,fixed:!1,maxWidth:210},n))}},s=function(e){var t=this;t.index=++r.index,t.config=i.extend({},t.config,o.config,e),document.body?t.creat():setTimeout(function(){t.creat()},30)};s.pt=s.prototype;var l=["layui-layer",".layui-layer-title",".layui-layer-main",".layui-layer-dialog","layui-layer-iframe","layui-layer-content","layui-layer-btn","layui-layer-close"];l.anim=["layer-anim-00","layer-anim-01","layer-anim-02","layer-anim-03","layer-anim-04","layer-anim-05","layer-anim-06"],s.pt.config={type:0,shade:.3,fixed:!0,move:l[1],title:"&#x4FE1;&#x606F;",offset:"auto",area:"auto",closeBtn:1,time:0,zIndex:19891014,maxWidth:360,anim:0,isOutAnim:!0,icon:-1,moveType:1,resize:!0,scrollbar:!0,tips:2},s.pt.vessel=function(e,t){var n=this,a=n.index,r=n.config,s=r.zIndex+a,f="object"==typeof r.title,c=r.maxmin&&(1===r.type||2===r.type),u=r.title?'<div class="layui-layer-title" style="'+(f?r.title[1]:"")+'">'+(f?r.title[0]:r.title)+"</div>":"";return r.zIndex=s,t([r.shade?'<div class="layui-layer-shade" id="layui-layer-shade'+a+'" times="'+a+'" style="'+("z-index:"+(s-1)+"; ")+'"></div>':"",'<div class="'+l[0]+(" layui-layer-"+o.type[r.type])+(0!=r.type&&2!=r.type||r.shade?"":" layui-layer-border")+" "+(r.skin||"")+'" id="'+l[0]+a+'" type="'+o.type[r.type]+'" times="'+a+'" showtime="'+r.time+'" conType="'+(e?"object":"string")+'" style="z-index: '+s+"; width:"+r.area[0]+";height:"+r.area[1]+(r.fixed?"":";position:absolute;")+'">'+(e&&2!=r.type?"":u)+'<div id="'+(r.id||"")+'" class="layui-layer-content'+(0==r.type&&r.icon!==-1?" layui-layer-padding":"")+(3==r.type?" layui-layer-loading"+r.icon:"")+'">'+(0==r.type&&r.icon!==-1?'<i class="layui-layer-ico layui-layer-ico'+r.icon+'"></i>':"")+(1==r.type&&e?"":r.content||"")+'</div><span class="layui-layer-setwin">'+function(){var e=c?'<a class="layui-layer-min" href="javascript:;"><cite></cite></a><a class="layui-layer-ico layui-layer-max" href="javascript:;"></a>':"";return r.closeBtn&&(e+='<a class="layui-layer-ico '+l[7]+" "+l[7]+(r.title?r.closeBtn:4==r.type?"1":"2")+'" href="javascript:;"></a>'),e}()+"</span>"+(r.btn?function(){var e="";"string"==typeof r.btn&&(r.btn=[r.btn]);for(var t=0,i=r.btn.length;t<i;t++)e+='<a class="'+l[6]+t+'">'+r.btn[t]+"</a>";return'<div class="'+l[6]+" layui-layer-btn-"+(r.btnAlign||"")+'">'+e+"</div>"}():"")+(r.resize?'<span class="layui-layer-resize"></span>':"")+"</div>"],u,i('<div class="layui-layer-move"></div>')),n},s.pt.creat=function(){var e=this,t=e.config,a=e.index,s=t.content,f="object"==typeof s,c=i("body");if(!t.id||!i("#"+t.id)[0]){switch("string"==typeof t.area&&(t.area="auto"===t.area?["",""]:[t.area,""]),t.shift&&(t.anim=t.shift),6==r.ie&&(t.fixed=!1),t.type){case 0:t.btn="btn"in t?t.btn:o.btn[0],r.closeAll("dialog");break;case 2:var s=t.content=f?t.content:[t.content||"","auto"];t.content='<iframe scrolling="'+(t.content[1]||"auto")+'" allowtransparency="true" id="'+l[4]+a+'" name="'+l[4]+a+'" onload="this.className=\'\';" class="layui-layer-load" frameborder="0" src="'+t.content[0]+'"></iframe>';break;case 3:delete t.title,delete t.closeBtn,t.icon===-1&&0===t.icon,r.closeAll("loading");break;case 4:f||(t.content=[t.content,"body"]),t.follow=t.content[1],t.content=t.content[0]+'<i class="layui-layer-TipsG"></i>',delete t.title,t.tips="object"==typeof t.tips?t.tips:[t.tips,!0],t.tipsMore||r.closeAll("tips")}if(e.vessel(f,function(n,r,u){c.append(n[0]),f?function(){2==t.type||4==t.type?function(){i("body").append(n[1])}():function(){s.parents("."+l[0])[0]||(s.data("display",s.css("display")).show().addClass("layui-layer-wrap").wrap(n[1]),i("#"+l[0]+a).find("."+l[5]).before(r))}()}():c.append(n[1]),i(".layui-layer-move")[0]||c.append(o.moveElem=u),e.layero=i("#"+l[0]+a),t.scrollbar||l.html.css("overflow","hidden").attr("layer-full",a)}).auto(a),i("#layui-layer-shade"+e.index).css({"background-color":t.shade[1]||"#000",opacity:t.shade[0]||t.shade}),2==t.type&&6==r.ie&&e.layero.find("iframe").attr("src",s[0]),4==t.type?e.tips():e.offset(),t.fixed&&n.on("resize",function(){e.offset(),(/^\d+%$/.test(t.area[0])||/^\d+%$/.test(t.area[1]))&&e.auto(a),4==t.type&&e.tips()}),t.time<=0||setTimeout(function(){r.close(e.index)},t.time),e.move().callback(),l.anim[t.anim]){var u="layer-anim "+l.anim[t.anim];e.layero.addClass(u).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",function(){i(this).removeClass(u)})}t.isOutAnim&&e.layero.data("isOutAnim",!0)}},s.pt.auto=function(e){var t=this,a=t.config,o=i("#"+l[0]+e);""===a.area[0]&&a.maxWidth>0&&(r.ie&&r.ie<8&&a.btn&&o.width(o.innerWidth()),o.outerWidth()>a.maxWidth&&o.width(a.maxWidth));var s=[o.innerWidth(),o.innerHeight()],f=o.find(l[1]).outerHeight()||0,c=o.find("."+l[6]).outerHeight()||0,u=function(e){e=o.find(e),e.height(s[1]-f-c-2*(0|parseFloat(e.css("padding-top"))))};switch(a.type){case 2:u("iframe");break;default:""===a.area[1]?a.maxHeight>0&&o.outerHeight()>a.maxHeight?(s[1]=a.maxHeight,u("."+l[5])):a.fixed&&s[1]>=n.height()&&(s[1]=n.height(),u("."+l[5])):u("."+l[5])}return t},s.pt.offset=function(){var e=this,t=e.config,i=e.layero,a=[i.outerWidth(),i.outerHeight()],o="object"==typeof t.offset;e.offsetTop=(n.height()-a[1])/2,e.offsetLeft=(n.width()-a[0])/2,o?(e.offsetTop=t.offset[0],e.offsetLeft=t.offset[1]||e.offsetLeft):"auto"!==t.offset&&("t"===t.offset?e.offsetTop=0:"r"===t.offset?e.offsetLeft=n.width()-a[0]:"b"===t.offset?e.offsetTop=n.height()-a[1]:"l"===t.offset?e.offsetLeft=0:"lt"===t.offset?(e.offsetTop=0,e.offsetLeft=0):"lb"===t.offset?(e.offsetTop=n.height()-a[1],e.offsetLeft=0):"rt"===t.offset?(e.offsetTop=0,e.offsetLeft=n.width()-a[0]):"rb"===t.offset?(e.offsetTop=n.height()-a[1],e.offsetLeft=n.width()-a[0]):e.offsetTop=t.offset),t.fixed||(e.offsetTop=/%$/.test(e.offsetTop)?n.height()*parseFloat(e.offsetTop)/100:parseFloat(e.offsetTop),e.offsetLeft=/%$/.test(e.offsetLeft)?n.width()*parseFloat(e.offsetLeft)/100:parseFloat(e.offsetLeft),e.offsetTop+=n.scrollTop(),e.offsetLeft+=n.scrollLeft()),i.attr("minLeft")&&(e.offsetTop=n.height()-(i.find(l[1]).outerHeight()||0),e.offsetLeft=i.css("left")),i.css({top:e.offsetTop,left:e.offsetLeft})},s.pt.tips=function(){var e=this,t=e.config,a=e.layero,o=[a.outerWidth(),a.outerHeight()],r=i(t.follow);r[0]||(r=i("body"));var s={width:r.outerWidth(),height:r.outerHeight(),top:r.offset().top,left:r.offset().left},f=a.find(".layui-layer-TipsG"),c=t.tips[0];t.tips[1]||f.remove(),s.autoLeft=function(){s.left+o[0]-n.width()>0?(s.tipLeft=s.left+s.width-o[0],f.css({right:12,left:"auto"})):s.tipLeft=s.left},s.where=[function(){s.autoLeft(),s.tipTop=s.top-o[1]-10,f.removeClass("layui-layer-TipsB").addClass("layui-layer-TipsT").css("border-right-color",t.tips[1])},function(){s.tipLeft=s.left+s.width+10,s.tipTop=s.top,f.removeClass("layui-layer-TipsL").addClass("layui-layer-TipsR").css("border-bottom-color",t.tips[1])},function(){s.autoLeft(),s.tipTop=s.top+s.height+10,f.removeClass("layui-layer-TipsT").addClass("layui-layer-TipsB").css("border-right-color",t.tips[1])},function(){s.tipLeft=s.left-o[0]-10,s.tipTop=s.top,f.removeClass("layui-layer-TipsR").addClass("layui-layer-TipsL").css("border-bottom-color",t.tips[1])}],s.where[c-1](),1===c?s.top-(n.scrollTop()+o[1]+16)<0&&s.where[2]():2===c?n.width()-(s.left+s.width+o[0]+16)>0||s.where[3]():3===c?s.top-n.scrollTop()+s.height+o[1]+16-n.height()>0&&s.where[0]():4===c&&o[0]+16-s.left>0&&s.where[1](),a.find("."+l[5]).css({"background-color":t.tips[1],"padding-right":t.closeBtn?"30px":""}),a.css({left:s.tipLeft-(t.fixed?n.scrollLeft():0),top:s.tipTop-(t.fixed?n.scrollTop():0)})},s.pt.move=function(){var e=this,t=e.config,a=i(document),s=e.layero,l=s.find(t.move),f=s.find(".layui-layer-resize"),c={};return t.move&&l.css("cursor","move"),l.on("mousedown",function(e){e.preventDefault(),t.move&&(c.moveStart=!0,c.offset=[e.clientX-parseFloat(s.css("left")),e.clientY-parseFloat(s.css("top"))],o.moveElem.css("cursor","move").show())}),f.on("mousedown",function(e){e.preventDefault(),c.resizeStart=!0,c.offset=[e.clientX,e.clientY],c.area=[s.outerWidth(),s.outerHeight()],o.moveElem.css("cursor","se-resize").show()}),a.on("mousemove",function(i){if(c.moveStart){var a=i.clientX-c.offset[0],o=i.clientY-c.offset[1],l="fixed"===s.css("position");if(i.preventDefault(),c.stX=l?0:n.scrollLeft(),c.stY=l?0:n.scrollTop(),!t.moveOut){var f=n.width()-s.outerWidth()+c.stX,u=n.height()-s.outerHeight()+c.stY;a<c.stX&&(a=c.stX),a>f&&(a=f),o<c.stY&&(o=c.stY),o>u&&(o=u)}s.css({left:a,top:o})}if(t.resize&&c.resizeStart){var a=i.clientX-c.offset[0],o=i.clientY-c.offset[1];i.preventDefault(),r.style(e.index,{width:c.area[0]+a,height:c.area[1]+o}),c.isResize=!0,t.resizing&&t.resizing(s)}}).on("mouseup",function(e){c.moveStart&&(delete c.moveStart,o.moveElem.hide(),t.moveEnd&&t.moveEnd(s)),c.resizeStart&&(delete c.resizeStart,o.moveElem.hide())}),e},s.pt.callback=function(){function e(){var e=a.cancel&&a.cancel(t.index,n);e===!1||r.close(t.index)}var t=this,n=t.layero,a=t.config;t.openLayer(),a.success&&(2==a.type?n.find("iframe").on("load",function(){a.success(n,t.index)}):a.success(n,t.index)),6==r.ie&&t.IE6(n),n.find("."+l[6]).children("a").on("click",function(){var e=i(this).index();if(0===e)a.yes?a.yes(t.index,n):a.btn1?a.btn1(t.index,n):r.close(t.index);else{var o=a["btn"+(e+1)]&&a["btn"+(e+1)](t.index,n);o===!1||r.close(t.index)}}),n.find("."+l[7]).on("click",e),a.shadeClose&&i("#layui-layer-shade"+t.index).on("click",function(){r.close(t.index)}),n.find(".layui-layer-min").on("click",function(){var e=a.min&&a.min(n);e===!1||r.min(t.index,a)}),n.find(".layui-layer-max").on("click",function(){i(this).hasClass("layui-layer-maxmin")?(r.restore(t.index),a.restore&&a.restore(n)):(r.full(t.index,a),setTimeout(function(){a.full&&a.full(n)},100))}),a.end&&(o.end[t.index]=a.end)},o.reselect=function(){i.each(i("select"),function(e,t){var n=i(this);n.parents("."+l[0])[0]||1==n.attr("layer")&&i("."+l[0]).length<1&&n.removeAttr("layer").show(),n=null})},s.pt.IE6=function(e){i("select").each(function(e,t){var n=i(this);n.parents("."+l[0])[0]||"none"===n.css("display")||n.attr({layer:"1"}).hide(),n=null})},s.pt.openLayer=function(){var e=this;r.zIndex=e.config.zIndex,r.setTop=function(e){var t=function(){r.zIndex++,e.css("z-index",r.zIndex+1)};return r.zIndex=parseInt(e[0].style.zIndex),e.on("mousedown",t),r.zIndex}},o.record=function(e){var t=[e.width(),e.height(),e.position().top,e.position().left+parseFloat(e.css("margin-left"))];e.find(".layui-layer-max").addClass("layui-layer-maxmin"),e.attr({area:t})},o.rescollbar=function(e){l.html.attr("layer-full")==e&&(l.html[0].style.removeProperty?l.html[0].style.removeProperty("overflow"):l.html[0].style.removeAttribute("overflow"),l.html.removeAttr("layer-full"))},e.layer=r,r.getChildFrame=function(e,t){return t=t||i("."+l[4]).attr("times"),i("#"+l[0]+t).find("iframe").contents().find(e)},r.getFrameIndex=function(e){return i("#"+e).parents("."+l[4]).attr("times")},r.iframeAuto=function(e){if(e){var t=r.getChildFrame("html",e).outerHeight(),n=i("#"+l[0]+e),a=n.find(l[1]).outerHeight()||0,o=n.find("."+l[6]).outerHeight()||0;n.css({height:t+a+o}),n.find("iframe").css({height:t})}},r.iframeSrc=function(e,t){i("#"+l[0]+e).find("iframe").attr("src",t)},r.style=function(e,t,n){var a=i("#"+l[0]+e),r=a.find(".layui-layer-content"),s=a.attr("type"),f=a.find(l[1]).outerHeight()||0,c=a.find("."+l[6]).outerHeight()||0;a.attr("minLeft");s!==o.type[3]&&s!==o.type[4]&&(n||(parseFloat(t.width)<=260&&(t.width=260),parseFloat(t.height)-f-c<=64&&(t.height=64+f+c)),a.css(t),c=a.find("."+l[6]).outerHeight(),s===o.type[2]?a.find("iframe").css({height:parseFloat(t.height)-f-c}):r.css({height:parseFloat(t.height)-f-c-parseFloat(r.css("padding-top"))-parseFloat(r.css("padding-bottom"))}))},r.min=function(e,t){var a=i("#"+l[0]+e),s=a.find(l[1]).outerHeight()||0,f=a.attr("minLeft")||181*o.minIndex+"px",c=a.css("position");o.record(a),o.minLeft[0]&&(f=o.minLeft[0],o.minLeft.shift()),a.attr("position",c),r.style(e,{width:180,height:s,left:f,top:n.height()-s,position:"fixed",overflow:"hidden"},!0),a.find(".layui-layer-min").hide(),"page"===a.attr("type")&&a.find(l[4]).hide(),o.rescollbar(e),a.attr("minLeft")||o.minIndex++,a.attr("minLeft",f)},r.restore=function(e){var t=i("#"+l[0]+e),n=t.attr("area").split(",");t.attr("type");r.style(e,{width:parseFloat(n[0]),height:parseFloat(n[1]),top:parseFloat(n[2]),left:parseFloat(n[3]),position:t.attr("position"),overflow:"visible"},!0),t.find(".layui-layer-max").removeClass("layui-layer-maxmin"),t.find(".layui-layer-min").show(),"page"===t.attr("type")&&t.find(l[4]).show(),o.rescollbar(e)},r.full=function(e){var t,a=i("#"+l[0]+e);o.record(a),l.html.attr("layer-full")||l.html.css("overflow","hidden").attr("layer-full",e),clearTimeout(t),t=setTimeout(function(){var t="fixed"===a.css("position");r.style(e,{top:t?0:n.scrollTop(),left:t?0:n.scrollLeft(),width:n.width(),height:n.height()},!0),a.find(".layui-layer-min").hide()},100)},r.title=function(e,t){var n=i("#"+l[0]+(t||r.index)).find(l[1]);n.html(e)},r.close=function(e){var t=i("#"+l[0]+e),n=t.attr("type"),a="layer-anim-close";if(t[0]){var s="layui-layer-wrap",f=function(){if(n===o.type[1]&&"object"===t.attr("conType")){t.children(":not(."+l[5]+")").remove();for(var a=t.find("."+s),r=0;r<2;r++)a.unwrap();a.css("display",a.data("display")).removeClass(s)}else{if(n===o.type[2])try{var f=i("#"+l[4]+e)[0];f.contentWindow.document.write(""),f.contentWindow.close(),t.find("."+l[5])[0].removeChild(f)}catch(c){}t[0].innerHTML="",t.remove()}"function"==typeof o.end[e]&&o.end[e](),delete o.end[e]};t.data("isOutAnim")&&t.addClass("layer-anim "+a),i("#layui-layer-moves, #layui-layer-shade"+e).remove(),6==r.ie&&o.reselect(),o.rescollbar(e),t.attr("minLeft")&&(o.minIndex--,o.minLeft.push(t.attr("minLeft"))),r.ie&&r.ie<10||!t.data("isOutAnim")?f():setTimeout(function(){f()},200)}},r.closeAll=function(e){i.each(i("."+l[0]),function(){var t=i(this),n=e?t.attr("type")===e:1;n&&r.close(t.attr("times")),n=null})};var f=r.cache||{},c=function(e){return f.skin?" "+f.skin+" "+f.skin+"-"+e:""};r.prompt=function(e,t){var a="";if(e=e||{},"function"==typeof e&&(t=e),e.area){var o=e.area;a='style="width: '+o[0]+"; height: "+o[1]+';"',delete e.area}var s,l=2==e.formType?'<textarea class="layui-layer-input"'+a+"></textarea>":function(){return'<input type="'+(1==e.formType?"password":"text")+'" class="layui-layer-input">'}(),f=e.success;return delete e.success,r.open(i.extend({type:1,btn:["&#x786E;&#x5B9A;","&#x53D6;&#x6D88;"],content:l,skin:"layui-layer-prompt"+c("prompt"),maxWidth:n.width(),success:function(t){s=t.find(".layui-layer-input"),s.val(e.value||"").focus(),"function"==typeof f&&f(t)},resize:!1,yes:function(i){var n=s.val();""===n?s.focus():n.length>(e.maxlength||500)?r.tips("&#x6700;&#x591A;&#x8F93;&#x5165;"+(e.maxlength||500)+"&#x4E2A;&#x5B57;&#x6570;",s,{tips:1}):t&&t(n,i,s)}},e))},r.tab=function(e){e=e||{};var t=e.tab||{},n="layui-this",a=e.success;return delete e.success,r.open(i.extend({type:1,skin:"layui-layer-tab"+c("tab"),resize:!1,title:function(){var e=t.length,i=1,a="";if(e>0)for(a='<span class="'+n+'">'+t[0].title+"</span>";i<e;i++)a+="<span>"+t[i].title+"</span>";return a}(),content:'<ul class="layui-layer-tabmain">'+function(){var e=t.length,i=1,a="";if(e>0)for(a='<li class="layui-layer-tabli '+n+'">'+(t[0].content||"no content")+"</li>";i<e;i++)a+='<li class="layui-layer-tabli">'+(t[i].content||"no  content")+"</li>";return a}()+"</ul>",success:function(t){var o=t.find(".layui-layer-title").children(),r=t.find(".layui-layer-tabmain").children();o.on("mousedown",function(t){t.stopPropagation?t.stopPropagation():t.cancelBubble=!0;var a=i(this),o=a.index();a.addClass(n).siblings().removeClass(n),r.eq(o).show().siblings().hide(),"function"==typeof e.change&&e.change(o)}),"function"==typeof a&&a(t)}},e))},r.photos=function(t,n,a){function o(e,t,i){var n=new Image;return n.src=e,n.complete?t(n):(n.onload=function(){n.onload=null,t(n)},void(n.onerror=function(e){n.onerror=null,i(e)}))}var s={};if(t=t||{},t.photos){var l=t.photos.constructor===Object,f=l?t.photos:{},u=f.data||[],d=f.start||0;s.imgIndex=(0|d)+1,t.img=t.img||"img";var y=t.success;if(delete t.success,l){if(0===u.length)return r.msg("&#x6CA1;&#x6709;&#x56FE;&#x7247;")}else{var p=i(t.photos),h=function(){u=[],p.find(t.img).each(function(e){var t=i(this);t.attr("layer-index",e),u.push({alt:t.attr("alt"),pid:t.attr("layer-pid"),src:t.attr("layer-src")||t.attr("src"),thumb:t.attr("src")})})};if(h(),0===u.length)return;if(n||p.on("click",t.img,function(){var e=i(this),n=e.attr("layer-index");r.photos(i.extend(t,{photos:{start:n,data:u,tab:t.tab},full:t.full}),!0),h()}),!n)return}s.imgprev=function(e){s.imgIndex--,s.imgIndex<1&&(s.imgIndex=u.length),s.tabimg(e)},s.imgnext=function(e,t){s.imgIndex++,s.imgIndex>u.length&&(s.imgIndex=1,t)||s.tabimg(e)},s.keyup=function(e){if(!s.end){var t=e.keyCode;e.preventDefault(),37===t?s.imgprev(!0):39===t?s.imgnext(!0):27===t&&r.close(s.index)}},s.tabimg=function(e){if(!(u.length<=1))return f.start=s.imgIndex-1,r.close(s.index),r.photos(t,!0,e)},s.event=function(){s.bigimg.hover(function(){s.imgsee.show()},function(){s.imgsee.hide()}),s.bigimg.find(".layui-layer-imgprev").on("click",function(e){e.preventDefault(),s.imgprev()}),s.bigimg.find(".layui-layer-imgnext").on("click",function(e){e.preventDefault(),s.imgnext()}),i(document).on("keyup",s.keyup)},s.loadi=r.load(1,{shade:!("shade"in t)&&.9,scrollbar:!1}),o(u[d].src,function(n){r.close(s.loadi),s.index=r.open(i.extend({type:1,id:"layui-layer-photos",area:function(){var a=[n.width,n.height],o=[i(e).width()-100,i(e).height()-100];if(!t.full&&(a[0]>o[0]||a[1]>o[1])){var r=[a[0]/o[0],a[1]/o[1]];r[0]>r[1]?(a[0]=a[0]/r[0],a[1]=a[1]/r[0]):r[0]<r[1]&&(a[0]=a[0]/r[1],a[1]=a[1]/r[1])}return[a[0]+"px",a[1]+"px"]}(),title:!1,shade:.9,shadeClose:!0,closeBtn:!1,move:".layui-layer-phimg img",moveType:1,scrollbar:!1,moveOut:!0,isOutAnim:!1,skin:"layui-layer-photos"+c("photos"),content:'<div class="layui-layer-phimg"><img src="'+u[d].src+'" alt="'+(u[d].alt||"")+'" layer-pid="'+u[d].pid+'"><div class="layui-layer-imgsee">'+(u.length>1?'<span class="layui-layer-imguide"><a href="javascript:;" class="layui-layer-iconext layui-layer-imgprev"></a><a href="javascript:;" class="layui-layer-iconext layui-layer-imgnext"></a></span>':"")+'<div class="layui-layer-imgbar" style="display:'+(a?"block":"")+'"><span class="layui-layer-imgtit"><a href="javascript:;">'+(u[d].alt||"")+"</a><em>"+s.imgIndex+"/"+u.length+"</em></span></div></div></div>",success:function(e,i){s.bigimg=e.find(".layui-layer-phimg"),s.imgsee=e.find(".layui-layer-imguide,.layui-layer-imgbar"),s.event(e),t.tab&&t.tab(u[d],e),"function"==typeof y&&y(e)},end:function(){s.end=!0,i(document).off("keyup",s.keyup)}},t))},function(){r.close(s.loadi),r.msg("&#x5F53;&#x524D;&#x56FE;&#x7247;&#x5730;&#x5740;&#x5F02;&#x5E38;<br>&#x662F;&#x5426;&#x7EE7;&#x7EED;&#x67E5;&#x770B;&#x4E0B;&#x4E00;&#x5F20;&#xFF1F;",{time:3e4,btn:["&#x4E0B;&#x4E00;&#x5F20;","&#x4E0D;&#x770B;&#x4E86;"],yes:function(){u.length>1&&s.imgnext(!0,!0)}})})}},o.run=function(t){i=t,n=i(e),l.html=i("html"),r.open=function(e){var t=new s(e);return t.index}},e.layui&&layui.define?(r.ready(),layui.define("jquery",function(t){r.path=layui.cache.dir,o.run(layui.$),e.layer=r,t("layer",r)})):"function"==typeof define&&define.amd?define(["jquery"],function(){return o.run(e.jQuery),r}):function(){o.run(e.jQuery),r.ready()}()}(window);]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sun Mar 30 22:14:32 CST 2025</time>
+    <url><![CDATA[http://172.16.4.32/xadmin/lib/layui/lay/modules/upload.js]]></url>
+    <host ip="172.16.4.32">172.16.4.32</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/xadmin/lib/layui/lay/modules/upload.js]]></path>
+    <extension>js</extension>
+    <request base64="false"><![CDATA[GET /xadmin/lib/layui/lay/modules/upload.js HTTP/1.1
+Host: 172.16.4.32
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: http://172.16.4.32/webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D
+Connection: keep-alive
+Cookie: null; JSESSIONID-BOSS-1=44B0083446F56C4ED38F20DC09AA1EB9
+
+]]></request>
+    <status>200</status>
+    <responselength>7697</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: bossWebV1.0.1
+Date: Sun, 30 Mar 2025 14:14:32 GMT
+Content-Type: application/javascript
+Last-Modified: Thu, 09 Mar 2023 08:37:40 GMT
+Connection: keep-alive
+ETag: W/"64099ad4-1b3b"
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src *;style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';img-src * data:;worker-src * blob:;font-src 'self' data:;
+X-XSS-Protection: 1
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+X-Permitted-Cross-Domain-Policies: master-only
+X-Download-Options: noopen
+Permissions-Policy: interest-cohort=()
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Length: 6971
+
+/** layui-v2.4.5 MIT License By https://www.layui.com */
+ ;layui.define("layer",function(e){"use strict";var i=layui.$,t=layui.layer,n=layui.hint(),a=layui.device(),o={config:{},set:function(e){var t=this;return t.config=i.extend({},t.config,e),t},on:function(e,i){return layui.onevent.call(this,r,e,i)}},l=function(){var e=this;return{upload:function(i){e.upload.call(e,i)},config:e.config}},r="upload",u="layui-upload-file",c="layui-upload-form",f="layui-upload-iframe",s="layui-upload-choose",p=function(e){var t=this;t.config=i.extend({},t.config,o.config,e),t.render()};p.prototype.config={accept:"images",exts:"",auto:!0,bindAction:"",url:"",field:"file",method:"post",data:{},drag:!0,size:0,number:0,multiple:!1},p.prototype.render=function(e){var t=this,e=t.config;e.elem=i(e.elem),e.bindAction=i(e.bindAction),t.file(),t.events()},p.prototype.file=function(){var e=this,t=e.config,n=e.elemFile=i(['<input class="'+u+'" type="file" accept="'+t.acceptMime+'" name="'+t.field+'"',t.multiple?" multiple":"",">"].join("")),o=t.elem.next();(o.hasClass(u)||o.hasClass(c))&&o.remove(),a.ie&&a.ie<10&&t.elem.wrap('<div class="layui-upload-wrap"></div>'),e.isFile()?(e.elemFile=t.elem,t.field=t.elem[0].name):t.elem.after(n),a.ie&&a.ie<10&&e.initIE()},p.prototype.initIE=function(){var e=this,t=e.config,n=i('<iframe id="'+f+'" class="'+f+'" name="'+f+'" frameborder="0"></iframe>'),a=i(['<form target="'+f+'" class="'+c+'" method="post" key="set-mine" enctype="multipart/form-data" action="'+t.url+'">',"</form>"].join(""));i("#"+f)[0]||i("body").append(n),t.elem.next().hasClass(c)||(e.elemFile.wrap(a),t.elem.next("."+c).append(function(){var e=[];return layui.each(t.data,function(i,t){t="function"==typeof t?t():t,e.push('<input type="hidden" name="'+i+'" value="'+t+'">')}),e.join("")}()))},p.prototype.msg=function(e){return t.msg(e,{icon:2,shift:6})},p.prototype.isFile=function(){var e=this.config.elem[0];if(e)return"input"===e.tagName.toLocaleLowerCase()&&"file"===e.type},p.prototype.preview=function(e){var i=this;window.FileReader&&layui.each(i.chooseFiles,function(i,t){var n=new FileReader;n.readAsDataURL(t),n.onload=function(){e&&e(i,t,this.result)}})},p.prototype.upload=function(e,t){var n,o=this,l=o.config,r=o.elemFile[0],u=function(){var t=0,n=0,a=e||o.files||o.chooseFiles||r.files,u=function(){l.multiple&&t+n===o.fileLength&&"function"==typeof l.allDone&&l.allDone({total:o.fileLength,successful:t,aborted:n})};layui.each(a,function(e,a){var r=new FormData;r.append(l.field,a),layui.each(l.data,function(e,i){i="function"==typeof i?i():i,r.append(e,i)}),i.ajax({url:l.url,type:"post",data:r,contentType:!1,processData:!1,dataType:"json",headers:l.headers||{},success:function(i){t++,d(e,i),u()},error:function(){n++,o.msg(".............................."),m(e),u()}})})},c=function(){var e=i("#"+f);o.elemFile.parent().submit(),clearInterval(p.timer),p.timer=setInterval(function(){var i,t=e.contents().find("body");try{i=t.text()}catch(n){o.msg(".........................................."),clearInterval(p.timer),m()}i&&(clearInterval(p.timer),t.html(""),d(0,i))},30)},d=function(e,i){if(o.elemFile.next("."+s).remove(),r.value="","object"!=typeof i)try{i=JSON.parse(i)}catch(t){return i={},o.msg("..............................JSON")}"function"==typeof l.done&&l.done(i,e||0,function(e){o.upload(e)})},m=function(e){l.auto&&(r.value=""),"function"==typeof l.error&&l.error(e||0,function(e){o.upload(e)})},h=l.exts,v=function(){var i=[];return layui.each(e||o.chooseFiles,function(e,t){i.push(t.name)}),i}(),g={preview:function(e){o.preview(e)},upload:function(e,i){var t={};t[e]=i,o.upload(t)},pushFile:function(){return o.files=o.files||{},layui.each(o.chooseFiles,function(e,i){o.files[e]=i}),o.files},resetFile:function(e,i,t){var n=new File([i],t);o.files=o.files||{},o.files[e]=n}},y=function(){if("choose"!==t&&!l.auto||(l.choose&&l.choose(g),"choose"!==t))return l.before&&l.before(g),a.ie?a.ie>9?u():c():void u()};if(v=0===v.length?r.value.match(/[^\/\\]+\..+/g)||[]||"":v,0!==v.length){switch(l.accept){case"file":if(h&&!RegExp("\\w\\.("+h+")$","i").test(escape(v)))return o.msg(".........................................."),r.value="";break;case"video":if(!RegExp("\\w\\.("+(h||"avi|mp4|wma|rmvb|rm|flash|3gp|flv")+")$","i").test(escape(v)))return o.msg(".........................................."),r.value="";break;case"audio":if(!RegExp("\\w\\.("+(h||"mp3|wav|mid")+")$","i").test(escape(v)))return o.msg(".........................................."),r.value="";break;default:if(layui.each(v,function(e,i){RegExp("\\w\\.("+(h||"jpg|png|gif|bmp|jpeg$")+")","i").test(escape(i))||(n=!0)}),n)return o.msg(".........................................."),r.value=""}if(o.fileLength=function(){var i=0,t=e||o.files||o.chooseFiles||r.files;return layui.each(t,function(){i++}),i}(),l.number&&o.fileLength>l.number)return o.msg("......................................."+l.number);if(l.size>0&&!(a.ie&&a.ie<10)){var F;if(layui.each(o.chooseFiles,function(e,i){if(i.size>1024*l.size){var t=l.size/1024;t=t>=1?t.toFixed(2)+"MB":l.size+"KB",r.value="",F=t}}),F)return o.msg(".................."+F)}y()}},p.prototype.events=function(){var e=this,t=e.config,o=function(i){e.chooseFiles={},layui.each(i,function(i,t){var n=(new Date).getTime();e.chooseFiles[n+"-"+i]=t})},l=function(i,n){var a=e.elemFile,o=i.length>1?i.length+".........":(i[0]||{}).name||a[0].value.match(/[^\/\\]+\..+/g)||[]||"";a.next().hasClass(s)&&a.next().remove(),e.upload(null,"choose"),e.isFile()||t.choose||a.after('<span class="layui-inline '+s+'">'+o+"</span>")};t.elem.off("upload.start").on("upload.start",function(){var a=i(this),o=a.attr("lay-data");if(o)try{o=new Function("return "+o)(),e.config=i.extend({},t,o)}catch(l){n.error("Upload element property lay-data configuration item has a syntax error: "+o)}e.config.item=a,e.elemFile[0].click()}),a.ie&&a.ie<10||t.elem.off("upload.over").on("upload.over",function(){var e=i(this);e.attr("lay-over","")}).off("upload.leave").on("upload.leave",function(){var e=i(this);e.removeAttr("lay-over")}).off("upload.drop").on("upload.drop",function(n,a){var r=i(this),u=a.originalEvent.dataTransfer.files||[];r.removeAttr("lay-over"),o(u),t.auto?e.upload(u):l(u)}),e.elemFile.off("upload.change").on("upload.change",function(){var i=this.files||[];o(i),t.auto?e.upload():l(i)}),t.bindAction.off("upload.action").on("upload.action",function(){e.upload()}),t.elem.data("haveEvents")||(e.elemFile.on("change",function(){i(this).trigger("upload.change")}),t.elem.on("click",function(){e.isFile()||i(this).trigger("upload.start")}),t.drag&&t.elem.on("dragover",function(e){e.preventDefault(),i(this).trigger("upload.over")}).on("dragleave",function(e){i(this).trigger("upload.leave")}).on("drop",function(e){e.preventDefault(),i(this).trigger("upload.drop",e)}),t.bindAction.on("click",function(){i(this).trigger("upload.action")}),t.elem.data("haveEvents",!0))},o.render=function(e){var i=new p(e);return l.call(i)},e(r,o)});]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sun Mar 30 22:14:31 CST 2025</time>
+    <url><![CDATA[http://172.16.4.32/xadmin/lib/layui/layui.js]]></url>
+    <host ip="172.16.4.32">172.16.4.32</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/xadmin/lib/layui/layui.js]]></path>
+    <extension>js</extension>
+    <request base64="false"><![CDATA[GET /xadmin/lib/layui/layui.js HTTP/1.1
+Host: 172.16.4.32
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: http://172.16.4.32/webauth.do?wlanuserip=172.18.2.60&wlanacname=bras&wlanusermac=F4-46-37-30-67-1D
+Connection: keep-alive
+Cookie: null; JSESSIONID-BOSS-1=44B0083446F56C4ED38F20DC09AA1EB9
+
+]]></request>
+    <status>200</status>
+    <responselength>7393</responselength>
+    <mimetype>script</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: bossWebV1.0.1
+Date: Sun, 30 Mar 2025 14:14:32 GMT
+Content-Type: application/javascript
+Last-Modified: Thu, 09 Mar 2023 08:37:40 GMT
+Connection: keep-alive
+ETag: W/"64099ad4-1a0b"
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src *;style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';img-src * data:;worker-src * blob:;font-src 'self' data:;
+X-XSS-Protection: 1
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+X-Permitted-Cross-Domain-Policies: master-only
+X-Download-Options: noopen
+Permissions-Policy: interest-cohort=()
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Length: 6667
+
+/** layui-v2.4.5 MIT License By https://www.layui.com */
+ ;!function(e){"use strict";var t=document,o={modules:{},status:{},timeout:10,event:{}},n=function(){this.v="2.4.5"},r=function(){var e=t.currentScript?t.currentScript.src:function(){for(var e,o=t.scripts,n=o.length-1,r=n;r>0;r--)if("interactive"===o[r].readyState){e=o[r].src;break}return e||o[n].src}();return e.substring(0,e.lastIndexOf("/")+1)}(),i=function(t){e.console&&console.error&&console.error("Layui hint: "+t)},a="undefined"!=typeof opera&&"[object Opera]"===opera.toString(),u={layer:"modules/layer",laydate:"modules/laydate",laypage:"modules/laypage",laytpl:"modules/laytpl",layim:"modules/layim",layedit:"modules/layedit",form:"modules/form",upload:"modules/upload",tree:"modules/tree",table:"modules/table",element:"modules/element",rate:"modules/rate",colorpicker:"modules/colorpicker",slider:"modules/slider",carousel:"modules/carousel",flow:"modules/flow",util:"modules/util",code:"modules/code",jquery:"modules/jquery",mobile:"modules/mobile","layui.all":"../layui.all"};n.prototype.cache=o,n.prototype.define=function(e,t){var n=this,r="function"==typeof e,i=function(){var e=function(e,t){layui[e]=t,o.status[e]=!0};return"function"==typeof t&&t(function(n,r){e(n,r),o.callback[n]=function(){t(e)}}),this};return r&&(t=e,e=[]),layui["layui.all"]||!layui["layui.all"]&&layui["layui.mobile"]?i.call(n):(n.use(e,i),n)},n.prototype.use=function(e,n,l){function s(e,t){var n="PLaySTATION 3"===navigator.platform?/^complete$/:/^(complete|loaded)$/;("load"===e.type||n.test((e.currentTarget||e.srcElement).readyState))&&(o.modules[f]=t,d.removeChild(v),function r(){return++m>1e3*o.timeout/4?i(f+" is not a valid module"):void(o.status[f]?c():setTimeout(r,4))}())}function c(){l.push(layui[f]),e.length>1?y.use(e.slice(1),n,l):"function"==typeof n&&n.apply(layui,l)}var y=this,p=o.dir=o.dir?o.dir:r,d=t.getElementsByTagName("head")[0];e="string"==typeof e?[e]:e,window.jQuery&&jQuery.fn.on&&(y.each(e,function(t,o){"jquery"===o&&e.splice(t,1)}),layui.jquery=layui.$=jQuery);var f=e[0],m=0;if(l=l||[],o.host=o.host||(p.match(/\/\/([\s\S]+?)\//)||["//"+location.host+"/"])[0],0===e.length||layui["layui.all"]&&u[f]||!layui["layui.all"]&&layui["layui.mobile"]&&u[f])return c(),y;if(o.modules[f])!function g(){return++m>1e3*o.timeout/4?i(f+" is not a valid module"):void("string"==typeof o.modules[f]&&o.status[f]?c():setTimeout(g,4))}();else{var v=t.createElement("script"),h=(u[f]?p+"lay/":/^\{\/\}/.test(y.modules[f])?"":o.base||"")+(y.modules[f]||f)+".js";h=h.replace(/^\{\/\}/,""),v.async=!0,v.charset="utf-8",v.src=h+function(){var e=o.version===!0?o.v||(new Date).getTime():o.version||"";return e?"?v="+e:""}(),d.appendChild(v),!v.attachEvent||v.attachEvent.toString&&v.attachEvent.toString().indexOf("[native code")<0||a?v.addEventListener("load",function(e){s(e,h)},!1):v.attachEvent("onreadystatechange",function(e){s(e,h)}),o.modules[f]=h}return y},n.prototype.getStyle=function(t,o){var n=t.currentStyle?t.currentStyle:e.getComputedStyle(t,null);return n[n.getPropertyValue?"getPropertyValue":"getAttribute"](o)},n.prototype.link=function(e,n,r){var a=this,u=t.createElement("link"),l=t.getElementsByTagName("head")[0];"string"==typeof n&&(r=n);var s=(r||e).replace(/\.|\//g,""),c=u.id="layuicss-"+s,y=0;return u.rel="stylesheet",u.href=e+(o.debug?"?v="+(new Date).getTime():""),u.media="all",t.getElementById(c)||l.appendChild(u),"function"!=typeof n?a:(function p(){return++y>1e3*o.timeout/100?i(e+" timeout"):void(1989===parseInt(a.getStyle(t.getElementById(c),"width"))?function(){n()}():setTimeout(p,100))}(),a)},o.callback={},n.prototype.factory=function(e){if(layui[e])return"function"==typeof o.callback[e]?o.callback[e]:null},n.prototype.addcss=function(e,t,n){return layui.link(o.dir+"css/"+e,t,n)},n.prototype.img=function(e,t,o){var n=new Image;return n.src=e,n.complete?t(n):(n.onload=function(){n.onload=null,"function"==typeof t&&t(n)},void(n.onerror=function(e){n.onerror=null,"function"==typeof o&&o(e)}))},n.prototype.config=function(e){e=e||{};for(var t in e)o[t]=e[t];return this},n.prototype.modules=function(){var e={};for(var t in u)e[t]=u[t];return e}(),n.prototype.extend=function(e){var t=this;e=e||{};for(var o in e)t[o]||t.modules[o]?i("......... "+o+" ............"):t.modules[o]=e[o];return t},n.prototype.router=function(e){var t=this,e=e||location.hash,o={path:[],search:{},hash:(e.match(/[^#](#.*$)/)||[])[1]||""};return/^#\//.test(e)?(e=e.replace(/^#\//,""),o.href="/"+e,e=e.replace(/([^#])(#.*$)/,"$1").split("/")||[],t.each(e,function(e,t){/^\w+=/.test(t)?function(){t=t.split("="),o.search[t[0]]=t[1]}():o.path.push(t)}),o):o},n.prototype.data=function(t,o,n){if(t=t||"layui",n=n||localStorage,e.JSON&&e.JSON.parse){if(null===o)return delete n[t];o="object"==typeof o?o:{key:o};try{var r=JSON.parse(n[t])}catch(i){var r={}}return"value"in o&&(r[o.key]=o.value),o.remove&&delete r[o.key],n[t]=JSON.stringify(r),o.key?r[o.key]:r}},n.prototype.sessionData=function(e,t){return this.data(e,t,sessionStorage)},n.prototype.device=function(t){var o=navigator.userAgent.toLowerCase(),n=function(e){var t=new RegExp(e+"/([^\\s\\_\\-]+)");return e=(o.match(t)||[])[1],e||!1},r={os:function(){return/windows/.test(o)?"windows":/linux/.test(o)?"linux":/iphone|ipod|ipad|ios/.test(o)?"ios":/mac/.test(o)?"mac":void 0}(),ie:function(){return!!(e.ActiveXObject||"ActiveXObject"in e)&&((o.match(/msie\s(\d+)/)||[])[1]||"11")}(),weixin:n("micromessenger")};return t&&!r[t]&&(r[t]=n(t)),r.android=/android/.test(o),r.ios="ios"===r.os,r},n.prototype.hint=function(){return{error:i}},n.prototype.each=function(e,t){var o,n=this;if("function"!=typeof t)return n;if(e=e||[],e.constructor===Object){for(o in e)if(t.call(e[o],o,e[o]))break}else for(o=0;o<e.length&&!t.call(e[o],o,e[o]);o++);return n},n.prototype.sort=function(e,t,o){var n=JSON.parse(JSON.stringify(e||[]));return t?(n.sort(function(e,o){var n=/^-?\d+$/,r=e[t],i=o[t];return n.test(r)&&(r=parseFloat(r)),n.test(i)&&(i=parseFloat(i)),r&&!i?1:!r&&i?-1:r>i?1:r<i?-1:0}),o&&n.reverse(),n):n},n.prototype.stope=function(t){t=t||e.event;try{t.stopPropagation()}catch(o){t.cancelBubble=!0}},n.prototype.onevent=function(e,t,o){return"string"!=typeof e||"function"!=typeof o?this:n.event(e,t,null,o)},n.prototype.event=n.event=function(e,t,n,r){var i=this,a=null,u=t.match(/\((.*)\)$/)||[],l=(e+"."+t).replace(u[0],""),s=u[1]||"",c=function(e,t){var o=t&&t.call(i,n);o===!1&&null===a&&(a=!1)};return r?(o.event[l]=o.event[l]||{},o.event[l][s]=[r],this):(layui.each(o.event[l],function(e,t){return"{*}"===s?void layui.each(t,c):(""===e&&layui.each(t,c),void(s&&e===s&&layui.each(t,c)))}),a)},e.layui=new n}(window);]]></response>
+    <comment></comment>
+  </item>
+</items>

@@ -1,0 +1,15 @@
+{
+    "nic": "eth0",
+    "instances": [
+        {
+            "interface": "",
+            "username": "202309032226",
+            "password": "aadsada"
+        },
+        {
+            "interface": "",
+            "username": "202309037782",
+            "password": "123456"
+        }
+    ]
+}
